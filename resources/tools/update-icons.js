@@ -8,7 +8,8 @@ const unzip = require('unzip');
 const child_process = require('child_process');
 const ncp = require('ncp');
 
-const gameIconsUrl = "http://game-icons.net/archives/png/zip/ffffff/000000/game-icons.net.png.zip";
+// const gameIconsUrl = "http://game-icons.net/archives/png/zip/ffffff/000000/game-icons.net.png.zip";
+const gameIconsUrl = "http://game-icons.net/archives/svg/zip/ffffff/transparent/game-icons.net.svg.zip";
 const tempFilePath = "./temp.zip";
 const tempDir = "./temp";
 const imgDir = "./generator/img";
@@ -16,7 +17,7 @@ const customIconDir = "./resources/custom-icons";
 const cssPath = "./generator/css/icons.css";
 const jsPath = "./generator/js/icons.js";
 //const processIconsCmd = "mogrify -background white -alpha shape *.png";
-const processIconsCmd = `mogrify -alpha copy -channel-fx "red=100%, blue=100%, green=100%" *.png`
+// const processIconsCmd = `mogrify -alpha copy -channel-fx "red=100%, blue=100%, green=100%" *.png`
 
 
 // ----------------------------------------------------------------------------
@@ -45,10 +46,22 @@ function unzipAll(src, dest) {
         .pipe(unzip.Parse())
         .on('entry', entry => {
             const fileName = entry.path;
-            const baseName = path.basename(fileName);
+            const baseFileName = path.parse(fileName).name
             const type = entry.type;
             if (type === "File") {
-                entry.pipe(fs.createWriteStream(path.join(dest, baseName)));
+                let destfile = path.join(dest, baseFileName)
+                if (fs.existsSync(destfile + '.svg')) {
+                    let i = 1;
+                    destfileIndexed = destfile + '-' + i + '.svg';
+                    while (fs.existsSync(destfileIndexed)) {
+                        i = i + 1
+                        destfileIndexed = destfile + '-' + i + '.svg';
+                    }
+                    destfile = destfileIndexed;
+                } else {
+                    destfile = destfile + '.svg'
+                }
+                entry.pipe(fs.createWriteStream(destfile));
             }
             else {
                 entry.autodrain();
@@ -88,7 +101,7 @@ function generateCSS(src, dest) {
             }
             else {
                 const content = files
-                    .map(name => `.icon-${name.replace(".png", "")} { background-image: url(../img/${name});}\n`)
+                    .map(name => `.icon-${name.replace(".svg", "")} { background-image: url(../img/${name});}\n`)
                     .join("");
                 fs.writeFile(dest, content, err => {
                     if (err) {
@@ -115,7 +128,7 @@ function generateJS(src, dest) {
             }
             else {
                 const content = "var icon_names = [\n" + files
-                    .map(name => `    "${name.replace(".png", "")}"`)
+                    .map(name => `    "${name.replace(".svg", "")}"`)
                     .join(",\n") +
 `
 ];
@@ -172,8 +185,8 @@ fse.emptyDir(tempDir)
 .then(() => unzipAll(tempFilePath, tempDir))
 .then(() => copyAll(tempDir, imgDir))
 .then(() => copyAll(customIconDir, imgDir))
-.then(() => processAll(imgDir))
+// .then(() => processAll(imgDir))
 .then(() => generateCSS(imgDir, cssPath))
 .then(() => generateJS(imgDir, jsPath))
 .then(() => console.log("Done."))
-.catch(err => cosole.log("Error", err));
+.catch(err => console.log("Error", err));
