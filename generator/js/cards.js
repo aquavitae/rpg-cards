@@ -120,7 +120,7 @@ function card_element_inline_icon(params, card_data, options) {
 function card_element_picture(params, card_data, options) {
     var url = params[0] || "";
     var height = params[1] || "";
-    return '<div class="card-element card-picture" style ="background-image: url(&quot;' + url + '&quot;); background-size: contain; background-position: center;background-repeat: no-repeat; height:' + height + 'px"></div>';
+    return '<div class="card-element card-picture" style ="background-image: url(&quot;' + url + '&quot;); background-size: contain; background-position: center;background-repeat: no-repeat; height: -webkit-fill-available"></div>';
 }
 
 function card_element_ruler(params, card_data, options) {
@@ -292,7 +292,21 @@ var card_element_generators = {
 
 function card_generate_contents(contents, card_data, options) {
     var result = "";
-    result += '<div class="card-content-container">';
+    if (card_data.picture_flex_ratio && card_data.picture_flex_ratio.length == 2) {
+        flex = card_data.picture_flex_ratio
+    } else {
+        flex = [1, 2]
+    }
+
+    if (card_data.picture) {
+        result += '<div class="card-content-container picture-container" style="flex:' + flex[0] + '">';
+        result += card_element_picture([card_data.picture]);
+        result += '</div>';
+        if (card_data.caption) {
+            result += '<div class="caption card-subtitle">' + card_data.caption + '</div>';
+        }
+    }
+    result += '<div class="card-content-container", style="flex:' + flex[1] + '">';
     result += contents.map(function (value) {
         var parts = card_data_split_params(value);
         var element_name = parts[0];
@@ -329,7 +343,7 @@ function card_generate_front(data, options) {
     var style_color = card_generate_color_style(color, options);
 
     var result = "";
-    result += '<div class="card card-size-' + options.card_size + ' ' + (options.rounded_corners ? 'rounded-corners' : '') + '" ' + style_color + '>';
+    result += '<div class="card card-size-' + options.card_size + ' ' + (options.rounded_corners ? 'rounded-corners' : '') + ' ' + '" ' + style_color + '>';
     result += card_element_icon(data, options);
     result += card_element_title(data, options);
     result += card_generate_contents(data.contents, data, options);
@@ -347,7 +361,7 @@ function card_generate_back(data, options) {
 	{
 		background_style = 'style = "background-image: url(&quot;' + url + '&quot;); background-size: contain; background-position: center; background-repeat: no-repeat;"';
 	}
-	else 
+	else
 	{
 		background_style = card_generate_color_gradient_style(color, options);
     }

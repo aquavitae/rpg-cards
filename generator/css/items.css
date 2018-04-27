@@ -1,0 +1,55 @@
+.caption {
+    color: white;
+    padding-left: 2mm;
+    padding-right: 2mm;
+    margin-bottom: 2mm;
+}
+
+.subtitle-right {
+    float: right;
+    font-variant: small-caps;
+    font-style: normal;
+    font-weight: bold;
+}
+
+.card-content-container.picture-container {
+    padding: 0.2mm;
+    margin-bottom: 2mm;
+}
+
+.card-size-25x35 {
+    border-width: 1.5mm;
+}
+
+.card-size-25x35 .caption {
+    margin-bottom: 1mm;
+}
+
+.card-size-25x35 .card-content-container.picture-container {
+    margin-bottom: 1mm;
+}
+
+.card-size-25x35 .card-title-12 {
+    line-height: 6mm;
+}
+.card-size-25x35 .card-title-inlineicon {
+    width: 6mm;
+    height: 6mm;
+}
+.card-size-25x35 .card-title {
+    height: 7mm;
+}
+.card-size-25x35 .card-section {
+    font-size: 8pt;
+}
+
+.card-inlineicon {
+    width: 4mm;
+    height: 4mm;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: inherit;
+    border-color: inherit;
+    float: right;
+    filter: invert(100%);
+}
