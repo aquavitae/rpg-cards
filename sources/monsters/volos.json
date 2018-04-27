@@ -1,0 +1,233 @@
+[
+  {
+    "source": "VGM",
+    "name": "Warlock of the Fiend",
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "any race",
+    "alignment": "any alignment",
+    "armor_class": 12,
+    "armor": "15 with mage armor",
+    "hit_points": 78,
+    "hit_dice": "12d8 + 24",
+    "speed": "30 ft.",
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 15,
+    "intelligence": 12,
+    "wisdom": 12,
+    "charisma": 18,
+    "wisdom_save": 4,
+    "charisma_save": 7,
+    "arcana": 4,
+    "deception": 7,
+    "persuasion": 7,
+    "religion": 4,
+    "damage_vulnerabilities": "",
+    "damage_resistances": "slashing damage from nonmagical attacks not made with silvered weapons",
+    "damage_immunities": "poison",
+    "condition_immunities": "poisoned",
+    "senses": "darkvision 60 ft., passive Perception 11",
+    "languages": "any two languages (usually Abyssal or Infernal)",
+    "challenge_rating": 7,
+    "xp": 2900,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "name": "Innate Spellcasting",
+        "desc": "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components:\n\u2022At will: alter self, false life, levitate (self only), mage armor (self only), silent image\n\u20221/day each: feeblemind, finger of death, plane shift"
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Spellcasting",
+        "desc": "The warlock is a 17th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +7 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:\n\n\u2022Cantrips (at will): eldritch blast, fire bolt, friends, mage hand, minor illusion, prestidigitation, shocking grasp\n\u20221st-5th level (4 5th-level slots): banishment, burning hands, flame strike, hellish rebuke, magic circle, scorching ray, scrying, stinking cloud, suggestion, wall of fire"
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+        "desc": "When the warlock makes an ability check or saving throw, it can add a dlO to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+      }
+    ],
+    "actions": [
+      {
+        "attack_bonus": 3,
+        "desc": "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 3 (ld6) bludgeoning damage plus 10 (3d6) fire damage.",
+        "name": "Mace"
+      }
+    ]
+  }, {
+    "source": "VGM",
+    "name": "Gnoll Witherling",
+    "icon": "fox-head",
+    "size": "Medium",
+    "type": "undead",
+    "alignment": "chaotic evil",
+    "armor_class": 12,
+    "armour": "natural armor",
+    "hit_points": 11,
+    "hit_dice": "2d8 + 2",
+    "speed": "30 ft.",
+    "strength": 14,
+    "dexterity": 8,
+    "constitution": 12,
+    "intelligence": 5,
+    "wisdom": 5,
+    "charisma": 5,
+    "senses": "darkvision 60 ft., passive Perception 7",
+    "damage_immunities": "poison",
+    "condition_immunities": "exhaustion, poisoned",
+    "languages": "understands Gnoll but can't speak",
+    "challenge_rating": 0.25,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+        "name": "Rampage"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The gnoll makes two attacks, one with its bite and one with its club, or two with its club."
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d4",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "name": "Bite"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d4",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) bludgeoning damage.",
+        "name": "Club"
+      }
+    ],
+    "reactions": [
+      {
+        "name": "Vengeful Strike",
+        "desc": [
+          "In response to a gnoll being reduced to O hit points within ",
+          "30 feet of the witherling, the witherling makes a melee attack."
+        ]
+      }
+    ]
+  }, {
+    "source": "VGM",
+    "name": "Gnoll Hunter",
+    ".picture": "https://vignette.wikia.nocookie.net/forgottenrealms/images/1/17/Gnoll-5e.png/revision/latest?cb=20171011030355",
+    "icon": "fox-head",
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "armor_class": 13,
+    "armour": "leather armor",
+    "hit_points": 22,
+    "hit_dice": "4d8 + 4",
+    "speed": "30 ft.",
+    "strength": 14,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 8,
+    "wisdom": 12,
+    "charisma": 8,
+    "perception": 3,
+    "stealth": 4,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "languages": "Gnoll",
+    "challenge_rating": 0.5,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+        "name": "Rampage"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The gnoll makes two melee attacks with its spear or two ranged attacks with its longbow."
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d4",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "name": "Bite"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d6",
+        "attack_bonus": 4,
+        "desc": "Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d6 + 2) piercing damage, or 6 (1d8 + 2) piercing damage if used with two hands to make a melee attack.",
+        "name": "Spear"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d8",
+        "attack_bonus": 4,
+        "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage, and the target's speed is reduced by 10 feet until the end of its next turn.",
+        "name": "Longbow"
+      }
+    ]
+  }, {
+    "source": "VGM",
+    "name": "Gnoll Flesh Gnawer",
+    "icon": "fox-head",
+    ".picture": "https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/677/1000/1000/636330370101337992.jpeg",
+    "picture_flex_ratio": [4, 5],
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "armor_class": 14,
+    "armour": "studded leather",
+    "hit_points": 22,
+    "hit_dice": "4d8 + 4",
+    "speed": "30 ft.",
+    "strength": 12,
+    "dexterity": 14,
+    "constitution": 12,
+    "intelligence": 8,
+    "wisdom": 10,
+    "charisma": 8,
+    "dexterity_save": 4,
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "languages": "Gnoll",
+    "challenge_rating": 1,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+        "name": "Rampage"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The gnoll makes three attacks: one with its bite and two with its shortsword."
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d4",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 4 (1d4 + 2) piercing damage.",
+        "name": "Bite"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d6",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 5 (1d6 + 2) piercing damage.",
+        "name": "Shortsword"
+      },
+      {
+        "desc": "Until the end of the turn, the gnoll's speed increases by 60 feet and it doesn't provoke opportunity attacks.",
+        "name": "Sudden Rush"
+      }
+    ]
+  }
+]

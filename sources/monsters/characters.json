@@ -1,0 +1,274 @@
+[
+  {
+    "source": "~",
+    "name": "Shadow (wolf)",
+    "icon": "wolf-head",
+    "picture": "https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/a/a6/689fb51b8e55a145ca0ea7cfb6a9a7e8.jpg/revision/latest?cb=20160528044618&format=original",
+    "picture_flex_ratio": [5, 6],
+    "size": "Medium",
+    "type": "beast",
+    "subtype": "",
+    "alignment": "neutral good",
+    "proficiency": 2,
+    "armor_class": 15,
+    "hit_points": 11,
+    "hit_dice": "2d8",
+    "speed": "40 ft.",
+    "strength": 12,
+    "dexterity": 15,
+    "constitution": 12,
+    "intelligence": 3,
+    "wisdom": 12,
+    "charisma": 6,
+    "perception": 5,
+    "stealth": 6,
+    "intimidation": 3,
+    "athletics": 3,
+    "damage_vulnerabilities": "",
+    "damage_resistances": "",
+    "damage_immunities": "",
+    "condition_immunities": "",
+    "senses": "passive Perception 13",
+    "languages": "",
+    "challenge_rating": 3,
+    "special_abilities": [
+      {
+        "name": "Trait",
+        "desc": "Threaten my friends, threaten me"
+      }, {
+        "name": "Flaw",
+        "desc": "I growl at strangers, and all people except my ranger are strangers to me"
+      },
+      {
+        "attack_bonus": 0,
+        "desc": "Shadow has advantage on Wisdom (Perception) checks that rely on hearing or smell.",
+        "name": "Keen Hearing and Smell"
+      },
+      {
+        "attack_bonus": 0,
+        "desc": "Shadow has advantage on an attack roll against a creature if at least one of Shadow's allies is within 5 ft. of the creature and the ally isn't incapacitated.",
+        "name": "Pack Tactics"
+      }
+    ],
+    "actions": [
+      {
+        "damage_bonus": 4,
+        "damage_dice": "2d4",
+        "attack_bonus": 6,
+        "desc": "Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 2d4 + 6 piercing damage. If the target is a creature, it must succeed on a DC 11 Strength saving throw or be knocked prone.",
+        "name": "Bite"
+      }
+    ],
+    "armour": "natural"
+  },
+  {
+    "source": "~",
+    "name": "Tomi Norelon",
+    "icon": "music-spell",
+    "size": "Small",
+    "type": "humanoid",
+    "subtype": "gnome",
+    "alignment": "chaotic good",
+    "armor_class": 13,
+    "armour": "leather",
+    "hit_points": 18,
+    "hit_dice": "3d8",
+    "speed": "30 ft.",
+    "strength": 8,
+    "dexterity": 14,
+    "constitution": 10,
+    "intelligence": 12,
+    "wisdom": 14,
+    "charisma": 16,
+    "wisdom_save": 4,
+    "charisma_save": 5,
+    "history": 3,
+    "insight": 4,
+    "medicine": 4,
+    "performance": 5,
+    "religion": 3,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "languages": "common, draconic, elvish",
+    "challenge_rating": 3,
+    "special_abilities": [
+      {
+        "name": "Gnome Cunning",
+        "desc": "Advantage on INT, WIS, and CHA saves against magic."
+      },
+      {
+        "name": "Song of Rest",
+        "desc": "With a song, friendly creatures gain 1d6 additional healing at the end of a short rest."
+      },
+      {
+        "name": "Disciple of Life",
+        "desc": "1st level or greater healing spells increase healing by 2 + spell's level HPs."
+      },
+      {
+        "name": "Spellcasting",
+        "desc": [
+          "Tomi is a 3rd-level spellcaster. His spellcasting ability is Charisma ",
+          "(spell save DC 13, +5 to hit with spell attacks). He regains its expended spell slots when he ",
+          "finishes a long rest. He knows the following cleric/bard spells:",
+          "\n\n\u2022 Cantrips (at will): <i>dancing lights, mending, message, minor illusion, sacred flame, spare the dying</i>",
+          "\n\u2022 1st level (4 1st-level slots): <i>bless, cure wounds, healing word, heroism, protection from evil and good, shield of faith, silent image</i>"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bardic Inspiration",
+        "desc": "Inspire another creature with a 1d6 that it can, within the next 10 min., add to a d20 roll (twice/long rest)."
+      },
+      {
+        "attack_bonus": 3,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 6 (1d4 + 4) piercing damage.",
+        "name": "Dagger"
+      }
+    ]
+  },
+  {
+    "source": "~",
+    "name": "Faskar the Fallen",
+    "icon": "warlock-eye",
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "Aasimar",
+    "alignment": "chaotic evil",
+    "armor_class": 16,
+    "armour": "black leather",
+    "hit_points": 128,
+    "hit_dice": "21d8 + 20",
+    "speed": "30 ft.",
+    "strength": 16,
+    "dexterity": 16,
+    "constitution": 12,
+    "intelligence": 10,
+    "wisdom": 8,
+    "charisma": 18,
+    "wisdom_save": 5,
+    "charisma_save": 10,
+    "acrobatics": 9,
+    "arcana": 6,
+    "intimidation": 10,
+    "religion": 6,
+    "damage_resistances": "necrotic, radiant",
+    "senses": "darkvision 120 ft., witch sight 30ft., devil's sight 120ft. passive Perception 9",
+    "languages": "abyssal, celesial, common, infernal",
+    "challenge_rating": 16,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "name": "Innate Spellcasting",
+        "desc": [
+          "The warlock's innate spellcasting ability is Charisma. It can innately cast the ",
+          "following spells (spell save DC 15), requiring no material components:\n",
+          "\u2022 At will: <i>alter self (self only), arcane eye, light</i>"
+        ]
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Spellcasting",
+        "desc": [
+          "The warlock is a 5th-level spellcaster. Its spellcasting ability is Charisma ",
+          "(spell save DC 18, +10 to hit with spell attacks). It regains its expended spell slots when it ",
+          "finishes a short or long rest. It knows the following warlock spells:\n",
+          "\u2022 Cantrips (at will): <i>blade ward, minor illusion, chill touch, prestidigitation</i>\n",
+          "\u2022 1st-5th level (4 5th-level slots): <i>armor of agathys, darkness, dimension door, fire shield, hellish rebuke, hex, hold monster, hunger of hadar, mirror image, misty step, wall of fire</i>"
+        ]
+      },
+      {
+        "name": "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+        "desc": "When Faskar makes an ability check or saving throw, he can add a d10 to the roll. He can do this after the roll is made but before any of the roll's effects occur."
+      }
+    ],
+    "actions": [
+      {
+        "desc": "Faskar makes three melee attacks.",
+        "name": "Multiattack"
+      },
+      {
+        "attack_bonus": 9,
+        "desc": "Melee Weapon Attack: +9 to hit, reach 5 ft., one target. Hit: 13 (1d8 + 9) slashing damage, plus 6 (1d4 + 4) necrotic damage",
+        "name": "Longsword of Wounding"
+      },
+      {
+        "name": "One with Shadows",
+        "desc": "When in an area of dim light or darkness, Faskar can become invisible until he moves or takes an action or a reaction."
+      },
+      {
+        "name": "Mystic Arcanum",
+        "desc": [
+          "Faskar can cast one of the following spells without expending a spell slot. He cannot cast that spell again until he has finished a long rest. ",
+          "<i>create undead, etherealness, dominate monster, forsight</i>"
+        ]
+      },
+      {
+        "name": "Necrotic Shroud",
+        "desc": [
+          "<small>Faskar unleashes divine energy, causing his eyes to turn into pools of darkness and two ",
+          "skeletal, ghostly, flightless wings to sprout from his back. The instant he transforms, all ",
+          "other creatures within 10 ft. that can see him must succeed on a DC 18 Charisma saving throw ",
+          "or become frightened until the end of their next turn. The transformation lasts for max 1 minute. ",
+          "While transformed, once on turn, Faskar deals an extra 20 necrotic damage to one target ",
+          "when he deals damage to it with an attack or a spell. He cannot use this trait again until he has finished a long rest.</small>"
+        ]
+      }
+    ]
+  },
+  {
+    "source": "~",
+    "name": "Warlock Initiate of the Fiend",
+    "icon": "warlock-eye",
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "any race",
+    "alignment": "any alignment",
+    "armor_class": 12,
+    "armor": "15 with mage armor",
+    "hit_points": 24,
+    "hit_dice": "5d8 + 2",
+    "speed": "30 ft.",
+    "strength": 10,
+    "dexterity": 14,
+    "constitution": 15,
+    "intelligence": 12,
+    "wisdom": 12,
+    "charisma": 16,
+    "wisdom_save": 4,
+    "charisma_save": 6,
+    "deception": 6,
+    "religion": 4,
+    "senses": "darkvision 120 ft., passive Perception 11",
+    "languages": "any two languages (usually Abyssal or Infernal)",
+    "challenge_rating": 3,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "name": "Innate Spellcasting",
+        "desc": "The warlock's innate spellcasting ability is Charisma. It can innately cast the following spells (spell save DC 15), requiring no material components:\n\u2022At will: mage armor (self only), false life (self only)"
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Spellcasting",
+        "desc": "The warlock is a 5th-level spellcaster. Its spellcasting ability is Charisma (spell save DC 15, +6 to hit with spell attacks). It regains its expended spell slots when it finishes a short or long rest. It knows the following warlock spells:\n\n\u2022 Cantrips (at will): <i>eldritch blast, minor illusion, prestidigitation</i>\n\u2022 1st-3rd level (2 3rd-level slots): <i>darkness, fireball, hellish rebuke, hold person, mirror image, misty step</i>"
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Dark One's Own Luck (Recharges after a Short or Long Rest)",
+        "desc": "When the warlock makes an ability check or saving throw, it can add a d1O to the roll. It can do this after the roll is made but before any of the roll's effects occur."
+      },
+      {
+        "attack_bonus": 0,
+        "name": "Devil's sight",
+        "desc": "The warlock can see normally in darkness, both magical and nonmagical, to a distance of 120 feet."
+      }
+    ],
+    "actions": [
+      {
+        "attack_bonus": 3,
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 7 (1d4 + 5) piercing damage.",
+        "name": "Dagger"
+      }
+    ]
+  }
+]

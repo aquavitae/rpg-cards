@@ -1,0 +1,330 @@
+[
+  {
+    "source": "MM",
+    "name": "Grell",
+    "icon": "brain-tentacle",
+    "size": "Medium",
+    "type": "aberration",
+    "subtype": "",
+    "alignment": "neutral evil",
+    "armor_class": 12,
+    "hit_points": 55,
+    "hit_dice": "10d8 + 10",
+    "speed": "10 ft., fly 30 ft. (hover)",
+    "strength": 15,
+    "dexterity": 14,
+    "constitution": 13,
+    "intelligence": 12,
+    "wisdom": 11,
+    "charisma": 9,
+    "intelligenct_save": 5,
+    "perception": 4,
+    "stealth": 6,
+    "damage_immunities": "lightning",
+    "condition_immunities": "blinded, prone",
+    "senses": "blindsight 60 ft. (blind beyond this radius), passive Perception 14",
+    "languages": "Grell",
+    "challenge_rating": 3,
+    "xp": 700,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "The grell makes two attacks: one with its tentacles and one with its beak.",
+        "name": "Multiattack"
+      }
+    ],
+    "actions": [
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d10",
+        "attack_bonus": 4,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 10ft., one creature. Hit: 7 (1d10 + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving throw or be poisoned for 1 minute. The poisoned target is paralyzed, and it can repeat the saving throw at the end of each of its turns, ending the effect on a success.<br>The target is also grappled (escape DC 15). If the target is Medium or smaller, it is also restrained until this grapple ends. While grappling the target, the grell has advantage on attack rolls against it and can't use this attack against other targets. When the grell moves, any Medium or smaller target it is grappling moves with it.",
+        "name": "Tentacles"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "2d4",
+        "attack_bonus": 7,
+        "desc": "Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4 + 2) piercing damage.",
+        "name": "Beak"
+      }
+    ]
+  },
+  {
+    "source": "MM",
+    "name": "Ogrillon (Half-Ogre)",
+    "icon": "ogre",
+    "size": "Large",
+    "type": "giant",
+    "subtype": "",
+    "alignment": "any chaotic alignment",
+    "armor_class": 12,
+    "armor": "hide armor",
+    "hit_points": 30,
+    "hit_dice": "4d10 + 8",
+    "speed": "40 ft.",
+    "strength": 17,
+    "dexterity": 10,
+    "constitution": 14,
+    "intelligence": 7,
+    "wisdom": 9,
+    "charisma": 10,
+    "senses": "darkvision 60 ft., passive Perception 9",
+    "languages": "Common, Giant",
+    "challenge_rating": 1,
+    "actions": [
+      {
+        "damage_bonus": 3,
+        "damage_dice": "2d8",
+        "attack_bonus": 5,
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 + 3) slashing damage, or 14 (2d10 + 3) slashing damage if used with two hands.",
+        "name": "Battleaxe"
+      },
+      {
+        "damage_bonus": 3,
+        "damage_dice": "2d6",
+        "attack_bonus": 5,
+        "desc": "Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft., one target. Hit: 10 (2d6 + 3) piercing damage.",
+        "name": "Javelin"
+      }
+    ]
+  },
+  {
+    "source": "MM",
+    "name": "Pixie",
+    "icon": "fairy",
+    "size": "Tiny",
+    "type": "fey",
+    "subtype": "",
+    "alignment": "neutral good",
+    "armor_class": 15,
+    "hit_points": 1,
+    "hit_dice": "1d4 - 1",
+    "speed": "10 ft., fly 30 ft.",
+    "strength": 2,
+    "dexterity": 20,
+    "constitution": 8,
+    "intelligence": 10,
+    "wisdom": 14,
+    "charisma": 15,
+    "perception": 4,
+    "stealth": 7,
+    "damage_vulnerabilities": "",
+    "damage_resistances": "",
+    "damage_immunities": "",
+    "condition_immunities": "",
+    "senses": "passive Perception 14",
+    "languages": "Sylvan",
+    "challenge_rating": 0.25,
+    "special_abilities": [
+      {
+        "desc": "The pixie has advantage on saving throws against spells and other magical effects.",
+        "name": "Magic Resistance"
+      },
+      {
+        "desc": [
+          "The pixie's innate spellcasting ability is Charisma (spell save DC 12). It can innately ",
+          "cast the following spells, requiring only its pixie dust as a component:\n\n",
+          "• At will: <i>druidcraft</i>\n",
+          "• 1/day each: <i>confusion, dancing lights, detect evil and good, detect thoughts, dispel magic, entangle, fly, phantasmal force, polymorph, sleep</i>"
+        ],
+        "name": "Innate Spellcasting"
+      }
+    ],
+    "actions": [
+      {
+        "desc": "The pixie magically turns invisible until its concentration ends (as if concentrating on a spell). Any equipment the pixie wears or carries is invisible with it.",
+        "name": "Superior Invisibility"
+      }
+    ]
+  },
+  {
+    "source": "MM",
+    "name": "Faerie Dragon",
+    "icon": "",
+    "size": "Tiny",
+    "type": "dragon",
+    "subtype": "",
+    "alignment": "chaotic good",
+    "armor_class": 15,
+    "hit_points": 14,
+    "hit_dice": "4d4 + 4",
+    "speed": "10 ft., fly 60 ft.",
+    "strength": 3,
+    "dexterity": 20,
+    "constitution": 13,
+    "intelligence": 14,
+    "wisdom": 12,
+    "charisma": 16,
+    "arcana": 4,
+    "perception": 3,
+    "stealth": 7,
+    "senses": "darkvision 60 ft., passive Perception 13",
+    "languages": "Draconic, Sylvan",
+    "challenge_rating": 1,
+    "special_abilities": [
+      {
+        "desc": "The pixie's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring only its pixie dust as a component:\n\n•At will: druidcraft\n•1/day each: confusion, dancing lights, detect evil and good, detect thoughts, dispel magic, entangle, fly, phantasmal force, polymorph, sleep",
+        "name": "Innate Spellcasting"
+      },
+      {
+        "name": "Limited Telepathy",
+        "desc": "Using telepathy, the dragon can magically communicate with any other faerie dragon within 60 feet of it."
+      },
+      {
+        "name": "Magic Resistance",
+        "desc": "The dragon has advantage on saving throws against spells and other magical effects."
+      },
+      {
+        "name": "Innate Spellcasting",
+        "desc": [
+          "The dragon's innate spellcasting ability is Charisma (spell save DC 13). ",
+          "It can innately cast a number of spells, requiring no material components. ",
+          "As the dragon ages and changes color, it gains additional spells as shown below.\n\n",
+          "• Red, l/day each: dancing lights, mage hand, minor illusion\n",
+          "• Orange, l/day: color spray\n",
+          "• Yellow, l/day: mirror image\n",
+          "• Green, l/day: suggestion\n",
+          "• Blue, l/day: major image\n",
+          "• Indigo, l/day: hallucinatory terrain\n",
+          "• Violet, l/day: polymorph\n"
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "name": "Bite",
+        "desc": "Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 1 piercing damage."
+      },
+      {
+        "name": "Euphoria Breath (Recharge 5-6)",
+        "desc": [
+          "The dragon exhales a puff of euphoria gas at one creature within 5 feet of it. The target must",
+          "succeed on a DC 11 Wisdom saving throw, or for 1 minute, the target can't take reactions and must roll a d6 at the start of",
+          "each of its turns to determine its behavior during the turn:\n",
+          "<b>1-4.</b> The target takes no action or bonus action and uses all of its movement to move in a random direction.\n",
+          "<b>5-6.</b> The target doesn't move, and the only thing it can do on its turn is make a DC 11 Wisdom saving throw, ending the effect on itself on a success."
+        ]
+      }
+    ]
+  },
+  {
+    "source": "MM",
+    "name": "Gnoll Pack Lord",
+    "icon": "fox-head",
+    "size": "Medium",
+    "type": "humanoid",
+    "subtype": "gnoll",
+    "alignment": "chaotic evil",
+    "armor_class": 15,
+    "armour": "hide armor, shield",
+    "hit_points": 49,
+    "hit_dice": "9d8 + 9",
+    "speed": "30 ft.",
+    "strength": 16,
+    "dexterity": 14,
+    "constitution": 13,
+    "intelligence": 8,
+    "wisdom": 11,
+    "charisma": 9,
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "languages": "Gnoll",
+    "challenge_rating": 2,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "When the gnoll reduces a creature to 0 hit points with a melee attack on its turn, the gnoll can take a bonus action to move up to half its speed and make a bite attack.",
+        "name": "Rampage"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The gnoll makes two attacks, either with its glaive or its longbow, and uses its Incite Rampage if it can."
+      },
+      {
+        "damage_bonus": 3,
+        "damage_dice": "1d4",
+        "attack_bonus": 5,
+        "desc": "Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage.",
+        "name": "Bite"
+      },
+      {
+        "damage_bonus": 3,
+        "damage_dice": "1d10",
+        "attack_bonus": 5,
+        "desc": "Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10 + 3) slashing damage.",
+        "name": "Glaive"
+      },
+      {
+        "damage_bonus": 2,
+        "damage_dice": "1d8",
+        "attack_bonus": 4,
+        "desc": "Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6 (1d8 + 2) piercing damage.",
+        "name": "Longbow"
+      },
+      {
+        "name": "Incite Rampage (Recharges 5-6)",
+        "desc": "One creature the gnoll can see within 30 feet of it can use its reaction to make a melee attack if it can hear the gnoll and has the Rampage trait."
+      }
+    ]
+  }, {
+    "source": "MM",
+    "name": "Scarecrow",
+    "icon": "scarecrow",
+    "size": "Medium",
+    "type": "construct",
+    "alignment": "chaotic evil",
+    "armor_class": 11,
+    "hit_points": 36,
+    "hit_dice": "8d8",
+    "speed": "30 ft.",
+    "strength": 11,
+    "dexterity": 13,
+    "constitution": 11,
+    "intelligence": 10,
+    "wisdom": 10,
+    "charisma": 13,
+    "damage_vulnerabilities": "fire",
+    "damage_resistances": "bludgeoning, piercing, and slashing from non-magical weapons",
+    "damage_immunities": "poison",
+    "condition_immunities": "charmed, exhaustion, frightened, paralyzed, poisoned, unconscious",
+    "senses": "darkvision 60 ft., passive Perception 10",
+    "languages": "understands the language of its creator but can't speak",
+    "challenge_rating": 1,
+    "special_abilities": [
+      {
+        "attack_bonus": 0,
+        "desc": "While the scarecrow remains motionless, it is indistinguishable from an ordinary, inanimate scarecrow.",
+        "name": "False Appearance"
+      }
+    ],
+    "actions": [
+      {
+        "name": "Multiattack",
+        "desc": "The scarecrow makes two claw attacks."
+      },
+      {
+        "damage_bonus": 1,
+        "damage_dice": "2d4",
+        "attack_bonus": 3,
+        "desc": [
+          "Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing damage. ",
+          "If the target is a creature, it must succeed on a DC 11 Wisdom saving throw or be ",
+          "frightened until the end of the scarecrow's next turn."
+        ],
+        "name": "Claw"
+      },
+      {
+        "desc": [
+          "The scarecrow targets one creature it can ",
+          "see within 30 feet of it. If the target can see the scarecrow, the ",
+          "target must succeed on a DC 11 Wisdom saving throw or be ",
+          "magically frightened until the end of the scarecrow's next turn. ",
+          "The frightened target is paralyzed. "
+        ],
+        "name": "Terrifying Glare"
+      }
+    ]
+  }
+]

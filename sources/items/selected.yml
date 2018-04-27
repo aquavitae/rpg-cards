@@ -1,0 +1,1906 @@
+- name: Slippers of Spider Climbing
+  page: dmg 200
+  tags:
+  - footwear
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/402/1000/1000/636284767446806965.jpeg
+  category: Wondrous Item
+  rarity: uncommon
+  level: major
+  attunement: true
+  usage: |
+    While you wear these light shoes, you can move up, down, and across vertical surfaces and upside down
+    along ceilings, while leaving your hands free. You have a climbing speed equal to your walking speed.
+    However the slippers don't allow you to move this way on a slippery surface, such as one covered by ice or oil.
+
+- name: Bag of Holding
+  page: dmg 153
+  tags:
+  - utility
+  - container
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/120/1000/1000/636284708068284913.jpeg
+  category: Wondrous Item
+  rarity: uncommon
+  level: minor
+  attunement: false
+  usage: |
+    This bag is larger on the inside than the outside, and can hold up to
+    500 pounds, not exceeding a volume of 64 cubic feet. Retrieving an item from
+    the bag requires an action.
+
+    If the bag is overloaded or pierced, it ruptures and is destroyed, and
+    its contents are scattered in the Astral Plane. Breathing creatures inside the
+    bag can survive up to a total of 10 minutes
+
+    Placing a bag of holding inside an extradimensional space (e.g. handy haversack,
+    portable hole) instantly destroys both items and opens a gate to the Astral Plane,
+    sucking through any creature within 10 feet. The gate then closes permanently.
+
+- name: Wolfbite
+  tags:
+  - bow
+  category: Weapon
+  icon: high-shot
+  picture: http://images6.fanpop.com/image/photos/32100000/katealphwolfs-tattoo-alpha-and-omega-32195010-412-504.jpg
+  rarity: legendary
+  level: major
+  attunement: true
+  type: "+1 longbow"
+  description: This finely crafted willow longbow has an obsidian stone set just above
+    the grip, carved with the face of a wolf.
+  usage: |
+    When an arrow is fired a word of command may be spoken to transform the arrow
+    into a spectral wolf. The attack has advantage if the target is within 5 ft. of an ally who isn't
+    incapacitated. On a hit, the wolf bites, dealing an additional 2d4 + 2 piercing
+    damage. If the target is a creature, it must succeed on a DC 11 Strength saving
+    throw or be knocked prone. This recharges during a short rest.
+
+- name: Cloak of Displacement
+  page: dmg 158
+  tags: []
+  image: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/164/1000/1000/636284722823230171.jpeg
+  category: Wondrous Item
+  rarity: rare
+  level: major
+  attunement: true
+  description:
+  - 'While you wear this cloak, it projects an illusion that '
+  - 'makes you appear to be standing in a place near '
+  - 'your actual location, causing any creature to have '
+  - 'disadvantage on attack rolls against you. If you take '
+  - 'damage, the property ceases to function until the '
+  - 'start of your next turn. This property is suppressed '
+  - 'while you are in-capacitated, restrained, or otherwise '
+  - unable to move.
+
+- name: Ring of Invisibility
+  page: dmg 191
+  tags:
+  - ring
+  image: ''
+  category: Ring
+  rarity: legendary
+  level: major
+  attunement: true
+  description:
+    While wearing this ring, you can turn invisible as an
+    action. Anything you are wearing or carrying is invisible
+    with you. You remain invisible until the ring is removed,
+    until you attack or cast a spell, or until you use a bonus
+    action to become visible again.
+
+- name: Portable Hole
+  page: dmg 185
+  tags: []
+  image: http://www.dundjinni.com/forums/uploads/JeKylL351/365_Portable_Hole_wTreasure.png
+  category: Wondrous Item
+  rarity: rare
+  level: minor
+  attunement: false
+  description:
+    This fine black cloth, soft as silk, is folded up to the dimensions
+    of a handkerchief and unfolds into a circular sheet 6 feet in diameter.
+
+    You can use an action to unfold a portable hole and place it on or
+    against a solid surface, creating an extradimensional hole 10 feet deep.
+    The cylindrical space within the hole exists on a different plane,
+    so it can''t be used to create open passages. Any creature inside an
+    open portable hole can exit the hole by climbing out of it.
+
+    You can use an action to close a portable hole by folding it up. Any creatures
+    or Objects within remain in the extradimensional space. No matter what''s
+    in it, the hole weighs next to nothing.
+
+    If the hole is folded up, a creature within the hole''s extradimensional space
+    can use an action to make a DC 10 Strength check. On a successful check, the
+    creature forces its way out and appears within 5 feet of the portable hole or
+    the creature carrying it. A breathing creature within a closed portable hole
+    can survive for up to 10 minutes, after which time it begins to suffocate.
+
+    Placing a portable hole inside an extradimensional space created by a Bag of
+    Holding,
+    Handy Haversack, or similar item instantly destroys both items and opens a gate
+    to the Astral Plane. The gate originates where the one item was placed inside
+    the other. Any creature within 10 feet of the gate is sucked through it and
+    deposited in a random location on the Astral Plane. The gate then closes.
+
+    The gate is one-way only and can't be reopened.
+
+- name: Glamoured Studded Leather
+  limits: studded leather
+  page: dmg 172
+  tags: []
+  image: http://www.talesfromthefireside.com/galleryitems/glamoured-studded-leather-0.jpg
+  category: Armor
+  rarity: rare
+  level: major
+  attunement: false
+  weight: 13
+  description:
+    While wearing this armor, you gain a +1 bonus to AC. You can also use a Bonus
+    Action to speak the armor''s Command Word and cause the armor to assume the
+    appearance of a normal set of clothing or some other kind of armor. You decide
+    what it looks like, including color, style, and accessories, but the armor
+    retains its normal bulk and weight. The illusory appearance last until you
+    use this property again or remove the armor.
+
+- name: Gauntlets of Ogre Power
+  page: dmg 171
+  image:
+  category: Wondrous item
+  rarity: uncommon
+  level: major
+  attunement: true
+  description:
+    Your Strength score is 19 while you wear these
+    gauntlets. They have no effect on you if your Strength is
+    already 19 or higher.
+
+- name: Immovable Rod
+  image: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/261/315/315/636284741670235041.jpeg
+  category: Rod
+  rarity: uncommon
+  level: minor
+  description:
+    This flat iron rod has a button on one end. You can use an action to press the button,
+    which causes the rod to become magically fixed in place. Until you or another creature
+    uses an action to push the button again, the rod doesn''t move, even if it is defying gravity.
+    The rod can hold up to 8,000 pounds of weight. More weight causes the rod to deactivate and
+    fall. A creature can use an action to make a DC 30 Strength check,
+    moving the fixed rod up to 10 feet on a success
+
+- name: Shield of Missile Attraction
+  limits: shield
+  page: dmg 200
+  attunement: true
+  rarity: rare
+  category: Armor
+- name: Wand of Secrets
+  page: dmg 211
+  attunement: false
+  rarity: uncommon
+  category: Wand
+- name: Potion of Hill Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Javelin of Lightning
+  limits: javelin
+  page: dmg 178
+  attunement: false
+  rarity: uncommon
+  category: Weapon
+- name: Dwarven Thrower
+  limits: warhammer, dwarf
+  page: dmg 167
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Talisman of Ultimate Evil
+  limits: evil alignment
+  page: dmg 207
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Potion of Cloud Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Efreeti Chain
+  limits: chain mail
+  page: dmg 167
+  attunement: true
+  rarity: legendary
+  category: Armor
+
+- name: Giant Slayer
+  limits: any axe or sword
+  page: dmg 172
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Manual of Golems
+  page: dmg 180
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Speed
+  page: dmg 188
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Helm of Teleportation
+  page: dmg 174
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Universal Solvent
+  page: dmg 209
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Ioun Stone, Reserve
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Necklace of Fireballs
+  page: dmg 182
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Staff of Frost
+  limits: druid, sorcerer, warlock, or wizard
+  page: dmg 202
+  attunement: true
+  rarity: very rare
+  category: Staff
+- name: Wand of Paralysis
+  limits: spellcaster
+  page: dmg 211
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Belt of Frost Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Ring of Telekinesis
+  page: dmg 193
+  attunement: true
+  rarity: very rare
+  category: Ring
+- name: Cloak of Invisibility
+  page: dmg 158
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+
+- name: Robe of Eyes
+  page: dmg 193
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Censer of Controlling Air Elementals
+  page: dmg 158
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Spell Scroll, 3rd Level
+  page: dmg 200
+  attunement: false
+  rarity: uncommon
+  category: Scroll
+- name: Spell Scroll, 8th Level
+  page: dmg 200
+  attunement: false
+  rarity: very rare
+  category: Scroll
+- name: Potion of Animal Friendship
+  page: dmg 187
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Rod of Alertness
+  page: dmg 196
+  attunement: true
+  rarity: very rare
+  category: Rod
+- name: Bracers of Defense
+  page: dmg 156
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Staff of the Python
+  limits: cleric, druid, or warlock
+  page: dmg 204
+  attunement: true
+  rarity: uncommon
+  category: Staff
+- name: Instrument of the Bards, Ollamh Harp
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Staff of the Magi
+  limits: sorcerer, warlock, or wizard
+  page: dmg 203
+  attunement: true
+  rarity: legendary
+  category: Staff
+- name: Ring of Free Action
+  page: dmg 191
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Rod of the Pact Keeper, +3
+  limits: warlock
+  page: dmg 197
+  attunement: true
+  rarity: very rare
+  category: Rod
+- name: Ring of Resistance
+  page: dmg 192
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Spell Scroll, 2nd Level
+  page: dmg 200
+  attunement: false
+  rarity: uncommon
+  category: Scroll
+- name: Weapon of Warning
+  page: dmg 213
+  attunement: true
+  rarity: uncommon
+  category: Weapon
+- name: Potion of Climbing
+  page: dmg 187
+  attunement: false
+  rarity: common
+  category: Potion
+- name: Circlet of Blasting
+  page: dmg 158
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Sword of Life Stealing
+  limits: any sword
+  page: dmg 206
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Oil of Etherealness
+  page: dmg 183
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Belt of Storm Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Potion of Healing
+  page: dmg 187
+  attunement: false
+  rarity: common
+  category: Potion
+- name: Amulet of the Planes
+  page: dmg 150
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Sending Stones
+  page: dmg 199
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Boots of Levitation
+  page: dmg 155
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Amulet of Proof Against Detection and Location
+  page: dmg 150
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Ioun Stone, Awareness
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Ammunition, +1
+  limits: any ammunition
+  page: dmg 150
+  attunement: false
+  rarity: uncommon
+  category: Weapon
+- name: Pipes of the Sewers
+  page: dmg 185
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Flame Tongue
+  limits: any sword
+  page: dmg 170
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Ring of Warmth
+  page: dmg 193
+  attunement: true
+  rarity: uncommon
+  category: Ring
+- name: Boots of Striding and Springing
+  page: dmg 156
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Berserker Axe
+  limits: any axe
+  page: dmg 155
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Elven Chain
+  limits: chain shirt
+  page: dmg 168
+  attunement: false
+  rarity: rare
+  category: Armor
+- name: Staff of Striking
+  page: dmg 203
+  attunement: true
+  rarity: very rare
+  category: Staff
+- name: Hat of Disguise
+  page: dmg 173
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Helm of Comprehending Languages
+  page: dmg 173
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Cloak of the Manta Ray
+  page: dmg 159
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Demon Armor
+  limits: plate
+  page: dmg 165
+  attunement: true
+  rarity: very rare
+  category: Armor
+- name: Potion of Fire Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Sphere of Annihilation
+  page: dmg 201
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Brooch of Shielding
+  page: dmg 156
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Rope of Entanglement
+  page: dmg 197
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Lantern of Revealing
+  page: dmg 179
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Elixir of Health
+  page: dmg 168
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Instrument of the Bards, Cli Lyre
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Efreeti Bottle
+  page: dmg 167
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Ring of Three Wishes
+  page: dmg 193
+  attunement: false
+  rarity: legendary
+  category: Ring
+- name: Philter of Love
+  page: dmg 184
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Keoghtom's Ointment
+  page: dmg 179
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+  srd_name: Restorative Ointment
+- name: Rod of Absorption
+  page: dmg 195
+  attunement: true
+  rarity: very rare
+  category: Rod
+- name: Potion of Growth
+  page: dmg 187
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Nine Lives Stealer
+  limits: any sword
+  page: dmg 183
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Figurine of Wondrous Power, Golden Lions
+  page: dmg 169
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Tome of Understanding
+  page: dmg 209
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Winged Boots
+  page: dmg 214
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Vorpal Sword
+  limits: any sword that deals slashing damage
+  page: dmg 209
+  attunement: true
+  rarity: legendary
+  category: Weapon
+- name: Bag of Beans
+  page: dmg 152
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Pipes of Haunting
+  page: dmg 185
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Eyes of Minute Seeing
+  page: dmg 168
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Iron Flask
+  page: dmg 178
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Periapt of Wound Closure
+  page: dmg 184
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Oathbow
+  limits: longbow
+  page: dmg 183
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Quiver of Ehlonna
+  page: dmg 189
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+  srd_name: Efficient Quiver
+- name: Staff of Thunder and Lightning
+  page: dmg 204
+  attunement: true
+  rarity: very rare
+  category: Staff
+- name: Arrow of Slaying
+  limits: arrow
+  page: dmg 152
+  attunement: false
+  rarity: very rare
+  category: Weapon
+- name: Weapon, +3
+  page: dmg 213
+  attunement: false
+  rarity: very rare
+  category: Weapon
+- name: Cloak of Elvenkind
+  page: dmg 158
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Folding Boat
+  page: dmg 170
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Ioun Stone, Insight
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Arrow-catching Shield
+  limits: shield
+  page: dmg 152
+  attunement: true
+  rarity: rare
+  category: Armor
+- name: Horseshoes of Speed
+  page: dmg 175
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Tome of the Stilled Tongue
+  limits: wizard
+  page: dmg 208
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Armor, +3
+  page: dmg 152
+  attunement: false
+  rarity: legendary
+  category: Armor
+- name: Ring of Regeneration
+  page: dmg 191
+  attunement: true
+  rarity: very rare
+  category: Ring
+- name: Dragon Slayer
+  limits: any sword
+  page: dmg 166
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Plate Armor of Etherealness
+  limits: plate
+  page: dmg 185
+  attunement: true
+  rarity: legendary
+  category: Armor
+- name: Ring of Animal Influence
+  page: dmg 189
+  attunement: false
+  rarity: rare
+  category: Ring
+- name: Weapon, +2
+  page: dmg 213
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Gem of Brightness
+  page: dmg 171
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Necklace of Adaptation
+  page: dmg 182
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Instrument of the Bards, Anstruth Harp
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Invulnerability
+  page: dmg 188
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Dimensional Shackles
+  page: dmg 165
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Manual of Bodily Health
+  page: dmg 180
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Tome of Leadership and Influence
+  page: dmg 208
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Instrument of the Bards, Fochlucan Bandore
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Gloves of Swimming and Climbing
+  page: dmg 172
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Ring of Fire Elemental Command
+  page: dmg 190
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Dragon Scale Mail
+  limits: scale mail
+  page: dmg 165
+  attunement: true
+  rarity: very rare
+  category: Armor
+- name: Ioun Stone, Fortitude
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Staff of Charming
+  limits: bard, cleric, druid, sorcerer, warlock, or wizard
+  page: dmg 201
+  attunement: true
+  rarity: rare
+  category: Staff
+- name: Staff of Power
+  limits: sorcerer, warlock, or wizard
+  page: dmg 202
+  attunement: true
+  rarity: very rare
+  category: Staff
+- name: Cloak of the Bat
+  page: dmg 159
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Sun Blade
+  limits: longsword
+  page: dmg 205
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Staff of the Adder
+  limits: cleric, druid, or warlock
+  page: dmg 203
+  attunement: true
+  rarity: uncommon
+  category: Staff
+- name: Staff of Swarming Insects
+  limits: bard, cleric, druid, sorcerer, warlock, or wizard
+  page: dmg 203
+  attunement: true
+  rarity: rare
+  category: Staff
+- name: Ring of Evasion
+  page: dmg 191
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Talisman of Pure Good
+  limits: good alignment
+  page: dmg 207
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Gem of Seeing
+  page: dmg 172
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Dwarven Plate
+  limits: plate
+  page: dmg 167
+  attunement: false
+  rarity: very rare
+  category: Armor
+- name: Decanter of Endless Water
+  page: dmg 161
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Oil of Sharpness
+  page: dmg 184
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Ioun Stone, Leadership
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Shield, +3
+  limits: shield
+  page: dmg 200
+  attunement: false
+  rarity: very rare
+  category: Armor
+- name: Ring of the Ram
+  page: dmg 193
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Adamantine Armor
+  limits: medium or heavy, but not hide
+  page: dmg 150
+  attunement: false
+  rarity: uncommon
+  category: Armor
+- name: Well of Many Worlds
+  page: dmg 213
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Sentinel Shield
+  limits: shield
+  page: dmg 199
+  attunement: false
+  rarity: uncommon
+  category: Armor
+- name: Rod of the Pact Keeper, +2
+  limits: warlock
+  page: dmg 197
+  attunement: true
+  rarity: rare
+  category: Rod
+- name: Potion of Supreme Healing
+  page: dmg 187
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Deck of Many Things
+  page: dmg 162
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Ring of Feather Falling
+  page: dmg 191
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Ring of Djinni Summoning
+  page: dmg 190
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Potion of Resistance
+  page: dmg 188
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Mariner's Armor
+  page: dmg 181
+  attunement: false
+  rarity: uncommon
+  category: Armor
+- name: Figurine of Wondrous Power, Ebony Fly
+  page: dmg 169
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Belt of Stone Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Ioun Stone, Intellect
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Bag of Tricks
+  page: dmg 154
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Alchemy Jug
+  page: dmg 150
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Bag of Devouring
+  page: dmg 153
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Helm of Telepathy
+  page: dmg 174
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Talisman of the Sphere
+  page: dmg 207
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Figurine of Wondrous Power, Serpentine Owl
+  page: dmg 170
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Instrument of the Bards, Mac-Fuirmidh Cittern
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Goggles of Night
+  page: dmg 172
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Ammunition, +2
+  limits: any ammunition
+  page: dmg 150
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Hammer of Thunderbolts
+  limits: maul
+  page: dmg 173
+  attunement: false
+  rarity: legendary
+  category: Weapon
+- name: Mithral Armor
+  limits: medium or heavy, but not hide
+  page: dmg 182
+  attunement: false
+  rarity: uncommon
+  category: Armor
+- name: Necklace of Prayer Beads
+  limits: cleric, druid, or paladin
+  page: dmg 182
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Potion of Gaseous Form
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Ioun Stone, Greater Absorption
+  page: dmg 176
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Figurine of Wondrous Power, Marble Elephant
+  page: dmg 170
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Gloves of Thievery
+  page: dmg 172
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Helm of Brilliance
+  page: dmg 173
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Spellguard Shield
+  limits: shield
+  page: dmg 201
+  attunement: true
+  rarity: very rare
+  category: Armor
+- name: Boots of Speed
+  page: dmg 155
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Spell Scroll, 6th Level
+  page: dmg 200
+  attunement: false
+  rarity: very rare
+  category: Scroll
+- name: Defender
+  limits: any sword
+  page: dmg 164
+  attunement: true
+  rarity: legendary
+  category: Weapon
+- name: Ring of Spell Storing
+  page: dmg 192
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Bracers of Archery
+  page: dmg 156
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Armor of Resistance
+  page: dmg 152
+  attunement: true
+  rarity: rare
+  category: Armor
+- name: Potion of Longevity
+  page: dmg 188
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Boots of Elvenkind
+  page: dmg 155
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+
+- name: Horn of Valhalla, Iron
+  page: dmg 175
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Armor, +2
+  page: dmg 152
+  attunement: false
+  rarity: very rare
+  category: Armor
+- name: Mirror of Life Trapping
+  page: dmg 181
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Spell Scroll, Cantrip
+  page: dmg 200
+  attunement: false
+  rarity: common
+  category: Scroll
+- name: Mace of Smiting
+  limits: mace
+  page: dmg 179
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Immovable Rod
+  page: dmg 175
+  attunement: false
+  rarity: uncommon
+  category: Rod
+- name: Ammunition, +3
+  limits: any ammunition
+  page: dmg 150
+  attunement: false
+  rarity: very rare
+  category: Weapon
+- name: Animated Shield
+  limits: shield
+  page: dmg 151
+  attunement: true
+  rarity: very rare
+  category: Armor
+
+- name: Dancing Sword
+  limits: any sword
+  page: dmg 161
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Shield, +2
+  limits: shield
+  page: dmg 200
+  attunement: false
+  rarity: rare
+  category: Armor
+- name: Daern's Instant Fortress
+  page: dmg 160
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+  srd_name: Instant Fortress
+- name: Wand of Magic Missiles
+  page: dmg 211
+  attunement: false
+  rarity: uncommon
+  category: Wand
+- name: Dagger of Venom
+  limits: dagger
+  page: dmg 161
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Cloak of Protection
+  page: dmg 159
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Potion of Heroism
+  page: dmg 188
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Stone of Controlling Earth Elementals
+  page: dmg 205
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Eyes of Charming
+  page: dmg 168
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Scroll of Protection
+  page: dmg 199
+  attunement: false
+  rarity: rare
+  category: Scroll
+- name: Potion of Stone Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Potion of Storm Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: legendary
+  category: Potion
+- name: Crystal Ball of Mind Reading
+  page: dmg 159
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Wand of Magic Detection
+  page: dmg 211
+  attunement: false
+  rarity: uncommon
+  category: Wand
+- name: Potion of Clairvoyance
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Wind Fan
+  page: dmg 213
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Candle of Invocation
+  page: dmg 157
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Ring of Earth Elemental Command
+  page: dmg 190
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Wand of the War Mage, +1
+  limits: spellcaster
+  page: dmg 212
+  attunement: true
+  rarity: uncommon
+  category: Wand
+- name: Dust of Dryness
+  page: dmg 166
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Staff of Healing
+  limits: bard, cleric, or druid
+  page: dmg 202
+  attunement: true
+  rarity: rare
+  category: Staff
+- name: Cube of Force
+  page: dmg 159
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Bead of Force
+  page: dmg 154
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Quaal's Feather Token
+  page: dmg 188
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+  srd_name: Feather Token
+- name: Broom of Flying
+  page: dmg 156
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Manual of Gainful Exercise
+  page: dmg 180
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Ioun Stone, Protection
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Bowl of Commanding Water Elementals
+  page: dmg 156
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Driftglobe
+  page: dmg 166
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Weapon, +1
+  page: dmg 213
+  attunement: false
+  rarity: uncommon
+  category: Weapon
+- name: Wand of Fireballs
+  limits: spellcaster
+  page: dmg 210
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Robe of the Archmagi
+  limits: sorcerer, warlock, or wizard
+  page: dmg 194
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Headband of Intellect
+  page: dmg 173
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Horn of Valhalla, Brass
+  page: dmg 175
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Ring of Shooting Stars
+  page: dmg 192
+  attunement: true
+  rarity: very rare
+  category: Ring
+- name: Wand of Enemy Detection
+  page: dmg 210
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Instrument of the Bards, Canaith Mandolin
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Horseshoes of a Zephyr
+  page: dmg 175
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Manual of Quickness of Action
+  page: dmg 181
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Invisibility
+  page: dmg 188
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Ioun Stone, Agility
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Flying
+  page: dmg 187
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Wand of Fear
+  page: dmg 210
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Eversmoking Bottle
+  page: dmg 168
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Horn of Valhalla, Silver
+  page: dmg 175
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Boots of the Winterlands
+  page: dmg 156
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Wand of Wonder
+  limits: spellcaster
+  page: dmg 212
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Eyes of the Eagle
+  page: dmg 168
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Frost Brand
+  limits: any sword
+  page: dmg 171
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Mantle of Spell Resistance
+  page: dmg 180
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Pearl of Power
+  limits: spellcaster
+  page: dmg 184
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Belt of Hill Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Rod of Lordly Might
+  page: dmg 196
+  attunement: true
+  rarity: legendary
+  category: Rod
+- name: Spell Scroll, 5th Level
+  page: dmg 200
+  attunement: false
+  rarity: rare
+  category: Scroll
+- name: Cap of Water Breathing
+  page: dmg 157
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Holy Avenger
+  limits: any sword, paladin
+  page: dmg 174
+  attunement: true
+  rarity: legendary
+  category: Weapon
+- name: Wand of Polymorph
+  limits: spellcaster
+  page: dmg 211
+  attunement: true
+  rarity: very rare
+  category: Wand
+- name: Potion of Water Breathing
+  page: dmg 188
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Ioun Stone, Mastery
+  page: dmg 176
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Ring of X-ray Vision
+  page: dmg 193
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Robe of Scintillating Colors
+  page: dmg 194
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Iron Bands of Bilarro
+  page: dmg 177
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+  srd_name: Iron Bands of Binding
+- name: Carpet of Flying
+  page: dmg 157
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Robe of Stars
+  page: dmg 194
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Rod of the Pact Keeper, +1
+  limits: warlock
+  page: dmg 197
+  attunement: true
+  rarity: uncommon
+  category: Rod
+- name: Potion of Mind Reading
+  page: dmg 188
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Sword of Answering
+  limits: longsword, by alignment
+  page: dmg 206
+  attunement: true
+  rarity: legendary
+  category: Weapon
+- name: Ring of Protection
+  page: dmg 191
+  attunement: true
+  rarity: rare
+  category: Ring
+- name: Rope of Climbing
+  page: dmg 197
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Horn of Valhalla, Bronze
+  page: dmg 175
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Ring of Mind Shielding
+  page: dmg 191
+  attunement: true
+  rarity: uncommon
+  category: Ring
+- name: Scimitar of Speed
+  limits: scimitar
+  page: dmg 199
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Nolzur's Marvelous Pigments
+  page: dmg 183
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+  srd_name: Marvelous Pigments
+- name: Sword of Vengeance
+  limits: any sword
+  page: dmg 206
+  attunement: true
+  rarity: uncommon
+  category: Weapon
+- name: Cape of the Mountebank
+  page: dmg 157
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Oil of Slipperiness
+  page: dmg 184
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Ring of Air Elemental Command
+  page: dmg 190
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Armor of Vulnerability
+  limits: plate
+  page: dmg 152
+  attunement: true
+  rarity: rare
+  category: Armor
+- name: Mace of Disruption
+  limits: mace
+  page: dmg 179
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Wand of Binding
+  limits: spellcaster
+  page: dmg 209
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Chime of Opening
+  page: dmg 158
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Horn of Blasting
+  page: dmg 174
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Saddle of the Cavalier
+  page: dmg 199
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Crystal Ball of Telepathy
+  page: dmg 159
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Dust of Disappearance
+  page: dmg 166
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Rod of Security
+  page: dmg 197
+  attunement: false
+  rarity: very rare
+  category: Rod
+- name: Sword of Sharpness
+  limits: any sword that deals slashing damage
+  page: dmg 206
+  attunement: true
+  rarity: very rare
+  category: Weapon
+- name: Staff of Withering
+  limits: cleric, druid, or warlock
+  page: dmg 205
+  attunement: true
+  rarity: rare
+  category: Staff
+
+- name: Amulet of Health
+  page: dmg 150
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Tentacle Rod
+  page: dmg 208
+  attunement: true
+  rarity: rare
+  category: Rod
+- name: Spell Scroll, 1st Level
+  page: dmg 200
+  attunement: false
+  rarity: common
+  category: Scroll
+- name: Medallion of Thoughts
+  page: dmg 181
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Spell Scroll, 4th Level
+  page: dmg 200
+  attunement: false
+  rarity: rare
+  category: Scroll
+- name: Ring of Jumping
+  page: dmg 191
+  attunement: true
+  rarity: uncommon
+  category: Ring
+- name: Spell Scroll, 9th Level
+  page: dmg 200
+  attunement: false
+  rarity: legendary
+  category: Scroll
+- name: Robe of Useful Items
+  page: dmg 195
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Ioun Stone, Absorption
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Greater Healing
+  page: dmg 187
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Shield, +1
+  limits: shield
+  page: dmg 200
+  attunement: false
+  rarity: uncommon
+  category: Armor
+- name: Dust of Sneezing and Choking
+  page: dmg 166
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Figurine of Wondrous Power, Onyx Dog
+  page: dmg 170
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Brazier of Commanding Fire Elementals
+  page: dmg 156
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Ioun Stone, Regeneration
+  page: dmg 176
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Gloves of Missile Snaring
+  page: dmg 172
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Wand of the War Mage, +3
+  limits: spellcaster
+  page: dmg 212
+  attunement: true
+  rarity: very rare
+  category: Wand
+- name: Figurine of Wondrous Power, Bronze Griffon
+  page: dmg 169
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Elemental Gem
+  page: dmg 167
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Rod of Resurrection
+  limits: cleric, druid, or paladin
+  page: dmg 197
+  attunement: true
+  rarity: legendary
+  category: Rod
+- name: Belt of Cloud Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Ring of Water Elemental Command
+  page: dmg 190
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Wand of Web
+  limits: spellcaster
+  page: dmg 212
+  attunement: true
+  rarity: uncommon
+  category: Wand
+- name: Crystal Ball
+  page: dmg 159
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Poison
+  page: dmg 188
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Apparatus of Kwalish
+  page: dmg 151
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+  srd_name: Apparatus of the Crab
+- name: Crystal Ball of True Seeing
+  page: dmg 159
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
+- name: Belt of Fire Giant Strength
+  page: dmg 155
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Diminution
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Periapt of Health
+  page: dmg 184
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Staff of the Woodlands
+  limits: druid
+  page: dmg 204
+  attunement: true
+  rarity: rare
+  category: Staff
+- name: Potion of Fire Breath
+  page: dmg 187
+  attunement: false
+  rarity: uncommon
+  category: Potion
+- name: Ring of Water Walking
+  page: dmg 193
+  attunement: false
+  rarity: uncommon
+  category: Ring
+- name: Wand of the War Mage, +2
+  limits: spellcaster
+  page: dmg 212
+  attunement: true
+  rarity: rare
+  category: Wand
+- name: Ioun Stone, Strength
+  page: dmg 176
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Deck of Illusions
+  page: dmg 161
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Luck Blade
+  limits: any sword
+  page: dmg 179
+  attunement: true
+  rarity: legendary
+  category: Weapon
+- name: Ring of Spell Turning
+  page: dmg 193
+  attunement: true
+  rarity: legendary
+  category: Ring
+- name: Periapt of Proof Against Poison
+  page: dmg 184
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Wand of Lightning Bolts
+  limits: spellcaster
+  page: dmg 211
+  attunement: true
+  rarity: rare
+  category: Wand
+
+- name: Ioun Stone, Sustenance
+  page: dmg 176
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Rod of Rulership
+  page: dmg 197
+  attunement: true
+  rarity: rare
+  category: Rod
+- name: Belt of Dwarvenkind
+  page: dmg 155
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Instrument of the Bards, Doss Lute
+  limits: bard
+  page: dmg 176
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Mace of Terror
+  limits: mace
+  page: dmg 180
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Trident of Fish Command
+  limits: trident
+  page: dmg 209
+  attunement: true
+  rarity: uncommon
+  category: Weapon
+- name: Armor, +1
+  page: dmg 152
+  attunement: false
+  rarity: rare
+  category: Armor
+- name: Cloak of Arachnida
+  page: dmg 158
+  attunement: true
+  rarity: very rare
+  category: Wondrous Item
+- name: Armor of Invulnerability
+  limits: plate
+  page: dmg 152
+  attunement: true
+  rarity: legendary
+  category: Armor
+- name: Potion of Frost Giant Strength
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Tome of Clear Thought
+  page: dmg 208
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Vicious Weapon
+  page: dmg 209
+  attunement: false
+  rarity: rare
+  category: Weapon
+- name: Spell Scroll, 7th Level
+  page: dmg 200
+  attunement: false
+  rarity: very rare
+  category: Scroll
+- name: Figurine of Wondrous Power, Ivory Goats
+  page: dmg 169
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+- name: Cubic Gate
+  page: dmg 160
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Staff of Fire
+  limits: druid, sorcerer, warlock, or wizard
+  page: dmg 201
+  attunement: true
+  rarity: very rare
+  category: Staff
+- name: Ring of Swimming
+  page: dmg 193
+  attunement: false
+  rarity: uncommon
+  category: Ring
+- name: Sovereign Glue
+  page: dmg 200
+  attunement: false
+  rarity: legendary
+  category: Wondrous Item
+- name: Figurine of Wondrous Power, Obsidian Steed
+  page: dmg 170
+  attunement: false
+  rarity: very rare
+  category: Wondrous Item
+- name: Potion of Vitality
+  page: dmg 188
+  attunement: false
+  rarity: very rare
+  category: Potion
+- name: Sword of Wounding
+  limits: any sword
+  page: dmg 207
+  attunement: true
+  rarity: rare
+  category: Weapon
+- name: Wings of Flying
+  page: dmg 214
+  attunement: true
+  rarity: rare
+  category: Wondrous Item
+- name: Potion of Superior Healing
+  page: dmg 187
+  attunement: false
+  rarity: rare
+  category: Potion
+- name: Figurine of Wondrous Power, Silver Raven
+  page: dmg 170
+  attunement: false
+  rarity: uncommon
+  category: Wondrous Item
+- name: Heward's Handy Haversack
+  page: dmg 174
+  attunement: false
+  rarity: rare
+  category: Wondrous Item
+  srd_name: Handy Haversack
+- name: Stone of Good Luck
+  page: dmg 205
+  attunement: true
+  rarity: uncommon
+  category: Wondrous Item
+- name: Scarab of Protection
+  page: dmg 199
+  attunement: true
+  rarity: legendary
+  category: Wondrous Item
