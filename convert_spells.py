@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import csv
 import json
@@ -20,10 +20,12 @@ def include(row):
     if name in printed:
         return False
 
-    classes = [c['name'] for c in row['classes']]
-    if row['level'] <= 1 and 'Paladin' in classes:
+    # classes = [c['name'] for c in row['classes']]
+    if row['level'] <= 1 and 'Paladin' in row['classes']:
         return True
     if row['name'] in ["Hunter's Mark", 'Hail of Thorns', 'Ensnaring Strike']:
+        return True
+    if row['level'] == 0 :
         return True
     return False
 
@@ -52,8 +54,8 @@ def tostring(x):
     return x
 
 
-def load_from_file(filename):
-    with open(filename, encoding='utf-8') as fh:
+def load_from_file(path):
+    with path.open(encoding='utf-8') as fh:
         return yaml.load(fh)
 
 def get_icon_and_colour(row):
@@ -112,6 +114,16 @@ def get_components(row):
         text += '<br><i>{}</i>'.format(row['material'])
     return text
 
+
+def clean(row):
+    classes = [c if isinstance(c, str) else c['name'] for c in row['classes']]
+    classes = [c for c in classes if ' ' not in c]
+    row['classes'] = sorted(set(classes))
+    if isinstance(row['components'], str):
+        row['components'] = list(row['components'])
+    return row
+
+
 def convert(row):
     tags = ['spell', 'level_{}'.format(row['level'])]
     subtitle = get_subtitle(row)
@@ -134,6 +146,9 @@ def convert(row):
             'section | Higher levels',
             'text | {}'.format(tostring(row['higher_level']))
         ]
+
+    classes = ', '.join(row['classes'])
+    contents.append('text | <span class="right-footer">{}</span>'.format(classes))
 
     icon, colour = get_icon_and_colour(row)
 
@@ -159,6 +174,7 @@ def main(folder, outfile):
     data = []
     for infile in Path(folder).iterdir():
         for row in load_from_file(infile):
+            row = clean(row)
             if include(row):
                 data.append(convert(row))
 
@@ -166,4 +182,4 @@ def main(folder, outfile):
 
 
 if __name__ == '__main__':
-    main('sources/spells', 'spells.json')
+    main('./sources/spells', 'spells.json')
