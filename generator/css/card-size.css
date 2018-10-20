@@ -16,12 +16,13 @@
 /* Center all content within a page */
 .page {
     display: flex;
-    align-content: center;
+    align-content: flex-start;
     justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     page-break-after: always;
     padding: 0;
+    padding-top: 15mm;
 }
 
 /* A4 paper area */
@@ -96,12 +97,26 @@ page[size="25x35"] {
 
 /* Portrait big card */
 .card-size-50x75 {
-    width:5.0in;
-    height:7.5in;
+    width:100mm;
+    height: 137mm;
 }
 .card-size-50x75 .card-back-icon {
     width: 2in;
     height: 2in;
+}
+
+/* Portrait huge card */
+.card-size-100x150 {
+    width: 7.5in;
+    height: 10.5in;
+    margin-top: 0.5in;
+}
+.card-size-100x150 .card-back-icon {
+    width: 2in;
+    height: 2in;
+}
+.card-size-100x150.card {
+    font-size: 7pt;
 }
 
 /* Card sizes that fill out the entire sheet of paper (minimal margins) */

@@ -5,7 +5,7 @@
     display: flex;
     flex-direction: column;
     font-family: 'Noto Sans', 'Myriad Pro', Calibri, Helvetica, Arial, sans-serif;
-    font-size: 7pt;
+    font-size: 6pt;
     overflow: hidden;
 }
 
@@ -200,7 +200,7 @@
 .card-fill {flex:1;}
 
 .card-description-line {
-    margin-top: 0.5em;
+    /* margin-top: 0.5em; */
     margin-bottom: 0.0em;
     font-size: inherit;
     color: black;

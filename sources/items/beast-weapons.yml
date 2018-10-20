@@ -1,0 +1,61 @@
+- name: Bow of the Beasts
+  tags:
+  - bow
+  category: Weapon
+  icon: high-shot
+  picture: https://i.pinimg.com/564x/1f/ca/2c/1fca2cc8688b5e725b770ce4216d1fef.jpg
+  picture_flex_ratio: [3, 2]
+  rarity: rare
+  level: major
+  type: Longbow
+  attunement: true
+  description: This fine willow longbow has a coin-sized cavity just above the grip.
+  properties:
+    - damage: 1d8 + 1 + DEX
+    -
+  usage: |
+    You gain a +1 bonus to attack and damage rolls made with this weapon. A suitably sized item can be fitted
+    into the indentation easily using a bonus action, but requires a short rest to remove.
+
+- name: Emblem of the Swallow
+  category: Wondrous Item
+  icon: wolverine-claws
+  picture: ../sources/images/items/swallow.svg
+  picture_flex_ratio: [1, 1]
+  rarity: rare
+  level: major
+  description: A coin-sized emblem of a swallow which may be inserted into the Bow of the Beasts to grant it additional abilities.
+  usage: |
+    This emblem has three charges. You may use a charge by touching the emblem while
+    making a ranged attack. When you do, you and all your equiment is drawn into the weapon and travel with the ammunition until
+    it hits. The ammunition then shatters and is destroyed, and you reappear at the point it which it hit.
+    The emblem regains 1d4-1 charges every dawn.
+
+- name: Emblem of the ???
+  category: Wondrous Item
+  icon: wolverine-claws
+  picture: ../sources/images/items/swallow.svg
+  picture_flex_ratio: [1, 1]
+  rarity: rare
+  level: major
+  description: A coin-sized emblem of a swallow which may be inserted into the Bow of the Beasts to grant it additional abilities.
+  usage: |
+    The weapon flies from your hands and attacks without needing you to guide it. It has a flying speed of 30ft, and drops to the ground
+    inanimate if it's distance from you exceeds 120ft. You still use your actions to attack with it as normal, but do not need to be
+    in the same space as it.
+
+    See dancing sword
+
+# - name: bat
+#   usage: |
+#     no disadvantage in the dark or while unable to see? maybe also some option to ignore cover
+
+# - name: cat
+#   uage: |
+#     doesn't break stealth
+
+# - wolf: pack tactics
+
+# - shark: no disadvantage underwater
+
+# - hawk: follow sight of the arrow

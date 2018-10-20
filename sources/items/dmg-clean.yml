@@ -836,11 +836,13 @@
 
 - name: Bracers of Defense
   source: dmg 156
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/b/b2/Bracers_of_defense-5e.jpg/revision/latest?cb=20171025141604
+  picture_ratio: [ 1, 1 ]
   rarity: rare
   category: Wondrous Item
   level: major
   attunement: true
-  description: |-
+  usage: |-
     While wearing these bracers, you gain a +2 bonus to AC if you are
     wearing no armor and using no shield.
 
@@ -1052,11 +1054,12 @@
 - name: Cloak of Displacement
   source: dmg 158
   picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/164/1000/1000/636284722823230171.jpeg
+  picture_ratio: [ 1, 1 ]
   rarity: rare
   category: Wondrous Item
   level: major
   attunement: true
-  description: |-
+  usage: |-
     While you wear this cloak, it projects an illusion that makes you
     appear to be standing in a place near your actual location, causing any
     creature to have disadvantage on attack rolls against you. If you take
@@ -1304,11 +1307,13 @@
 
 - name: Dagger of Venom
   source: dmg 161
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/6/6a/Dagger_of_venom-5e.jpg/revision/latest?cb=20180221141237
+  picture_ratio: [1, 1]
   rarity: rare
   category: Weapon
   level: major
   attunement: false
-  description: |-
+  usage: |-
     You gain a +1 bonus to attack and damage rolls made with this magic
     weapon.
 
@@ -2316,10 +2321,13 @@
 - name: Flame Tongue
   source: dmg 170
   rarity: rare
+  picture: ../sources/images/items/flame tongue.png.jpg
+  picture_ratio: [ 1, 1 ]
   category: Weapon
   level: major
   attunement: true
-  description: |-
+  type: Scimitar
+  usage: |-
     You can use a bonus action to speak this magic sword's command word,
     causing flames to erupt from the blade. These flames shed bright light
     in a 40-foot radius and dim light for an additional 40 feet. While the
@@ -4277,7 +4285,7 @@
 
 - name: Potion of Greater Healing
   source: dmg 187
-  picture: https://img00.deviantart.net/0aba/i/2016/267/4/c/superior_healing_potion_by_matriarchs_haunt-daipsxt.png
+  picture: ../sources/images/healing2.jpg
   picture_ratio: [20, 7]
   rarity: uncommon
   category: Potion
@@ -4328,40 +4336,32 @@
 
 - name: Potion of Hill Giant Strength
   source: dmg 187
+  picture: ../sources/images/hill-strength.jpg
+  picture_ratio: [10, 6]
   rarity: uncommon
   category: Potion
   level: minor
   attunement: false
+  usage: |-
+    When you drink this potion, your Strength score changes to 21 for 1 hour.
+    The potion has no effect on you if your Strength is equal to or greater than 21.
   description: |-
-    When you drink this potion, your Strength score changes for 1 hour. The
-    type of giant determines the score (see the table below). The potion has
-    no effect on you if your Strength is equal to or greater than that
-    score.
-
     This potion's transparent liquid has floating in it a sliver of
-    fingernail from a giant of the appropriate type. The *potion of
-    frost giant strength* and the *potion of stone giant strength* have
-    the same effect.
-
-    ===================  ==========  ================
-    Type of Giant        Strength    Rarity
-    ===================  ==========  ================
-    Hill giant           21          Uncommon
-    Frost/stone giant    23          Rare
-    Fire giant           25          Rare
-    Cloud giant          27          Very rare
-    Storm giant          29          Legendary
-    ===================  ==========  ================
+    fingernail from a hill giant.
 
 - name: Potion of Invisibility
   source: dmg 188
+  picture: ../sources/images/invisibility.jpg
+  picture_ratio: [10, 6]
   rarity: very rare
   category: Potion
   level: minor
   attunement: false
   description: |-
     This potion's container looks empty but feels as though it holds
-    liquid.  When you drink it, you become invisible for 1 hour. Anything
+    liquid.
+  usage: |-
+    When you drink it, you become invisible for 1 hour. Anything
     you wear or carry is invisible with you. The effect ends early if you
     attack or cast a spell.
 
@@ -4974,11 +4974,13 @@
 
 - name: Ring of Spell Storing
   source: dmg 192
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/a/a3/Ring_of_spell_storing_5e.png/revision/latest?cb=20171010201732
+  picture_ratio: [ 1, 1 ]
   rarity: rare
   category: Ring
   level: major
   attunement: true
-  description: |-
+  usage: |-
     This ring stores spells cast into it, holding them until the attuned
     wearer uses them. The ring can store up to 5 levels worth of spells at
     a time. When found, it contains 1d6 - 1 levels of stored spells chosen
@@ -6376,11 +6378,13 @@
 
 - name: Staff of Withering
   source: dmg 205
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/2/2a/Staff_of_withering-5e.jpg/revision/latest?cb=20171010203152
+  picture_ratio: [ 1, 1 ]
   rarity: rare
   category: Staff
   level: major
   attunement: true
-  description: |-
+  usage: |-
     This staff has 3 charges and regains 1d3 expended charges daily at dawn.
 
     The staff can be wielded as a magic quarterstaff. On a hit, it deals

@@ -7,6 +7,8 @@ import urllib.request
 
 from pathlib import Path
 
+from common import load_from_file, highlight_dice
+
 SKILLS = [
     ('Acrobatics', 'acrobatics'),
     ('Animal Handling', 'animal-handling'),
@@ -48,7 +50,23 @@ printed = [
     'gnoll flesh gnawer', 'gnoll hunter', 'gnoll witherling', 'ghoul',
     'shadow', 'shadow (wolf)',
     'hyena', 'ghast', 'scarecrow', 'cockatrice',
-    'green hag', 'ghost'
+    'green hag', 'ghost',
+    'warlock of the archfey', 'master thief', 'scoundrel', 'pixie', 'imp', 'rat', 'spider', 'raven'
+    'bandit', 'dire wolf', 'druid', 'giant spider', 'swarm of bats', 'swarm of ravens', "will-o'-wisp",
+    'needle blight', 'twig blight', 'vine blight', 'werewolf',
+    'assassin', 'beserker', 'bandit captain', 'strahd zombie', 'revenant', 'vampire spawn',
+    'gladiator', 'veteran', 'spy', 'wereraven',
+    'night hag',
+    'dretch',    'nightmare',
+    'owl',
+    'imp',
+    'quasit',
+    'young blue dragon',
+]
+
+TO_PRINT = [
+    'displacer beast',
+    'flesh golem',
 ]
 
 def include(row):
@@ -56,18 +74,10 @@ def include(row):
     Use this function to filter the items processed.
     """
     name = row['name'].lower()
-    if name in printed:
-        return False
-    # return row['type'] == 'humanoid'
-    if name in ('wight', 'mimic', 'goblin', 'hobgoblin'):
+    if name in TO_PRINT:
         return True
     return False
     # return True
-
-def load_from_file(filename):
-    with open(filename) as fh:
-        return json.load(fh)
-
 
 def get_tags(row):
     tags = [row['size'], row['type']]
@@ -123,9 +133,9 @@ def stats(row):
     stat_style = 'style="color:{};font-size:180%"'.format(colour)
     template = '<div {div_style}><b>{title}<br><span {stat_style}>{value}</span></b><br>{description}</div>'
 
-    armour = row.get('armour', '')
+    armour = row.get('armor', '')
     hit_dice = row['hit_dice']
-    speeds = [re.sub('\s*ft\.?', '', x).strip() for x in row['speed'].split(',')]
+    speeds = [re.sub(r'\s*ft\.?', '', x).strip() for x in row['speed'].split(',')]
     speed = 'NA'
     extra_speeds = ''
     if speeds:
@@ -230,6 +240,7 @@ def abilities(row):
             for x in row[key]:
                 desc = x['desc'] if isinstance(x['desc'], str) else ''.join(x['desc'])
                 desc = re.sub('(<br>|\n)+', '<br>', desc)
+                desc = highlight_dice(desc)
                 lines.append('property | {} | {}'.format(x['name'], desc))
 
     return lines
@@ -317,10 +328,8 @@ def write_json(data, outfile):
 
 def main(folder, outfile):
     data = []
-    # for row in load_all(infile):
-    #     print(row['index'], row['name'])
-    #     data.append(row)
     for infile in Path(folder).iterdir():
+        print(infile)
         for row in load_from_file(infile):
             if include(row):
                 data.append(convert(row))
@@ -329,5 +338,4 @@ def main(folder, outfile):
 
 
 if __name__ == '__main__':
-    # main('monsters.csv', 'monsters_api.json')
     main('sources/monsters', 'monsters.json')

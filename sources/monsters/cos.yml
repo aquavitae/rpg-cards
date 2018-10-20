@@ -1,0 +1,93 @@
+- source: CoS
+  name: Strahd Zombie
+  icon: shambling-zombie
+  size: Medium
+  type: undead
+  subtype: ''
+  alignment: unaligned
+  armor_class: 8
+  hit_points: 30
+  hit_dice: 4d8 + 12
+  speed: 20 ft.
+  strength: 13
+  dexterity: 6
+  constitution: 16
+  intelligence: 3
+  wisdom: 6
+  charisma: 5
+  wisdom_save: 0
+  damage_immunities: poison
+  condition_immunities: poisoned
+  senses: darkvision 60 ft., passive Perception 8
+  languages: understands all languages it spoke in life but can't speak
+  challenge_rating: 1
+  special_abilities:
+  - name: Loathsome Limbs
+    desc: >-
+      Whenever it takes 5 bludgeoning or slashing
+      damage at once, roll a d20: <b>1-8:</b> One leg is severed.
+      <b>9-16:</b> One arm is severed. <b>17-20:</b> The zombie is decapitated.
+
+      Severed parts are still considered part of the zombie.
+      Arms and legs can move separately with a speed of 5 ft.
+      An arm can make a claw attack with disadvantage. A
+      head can make a bite attack, but the body is blinded unless
+      the head can see it.
+
+      Speed is halved if it's missing a leg. lf it loses
+      both legs, it falls prone. If it has both arms, it can crawl. With
+      only one arm, it can crawl at half speed. With
+      no arms or legs, its speed is 0 ft.
+  actions:
+  - name: Multiattack
+    desc: 'Three attacks: one bite and two claws.'
+  - name: Bite
+    desc: '<i>Melee Weapon Attack:</i> +3 to hit, reach 5 ft., one target.<br><i>Hit:</i> 3 (1d4 + 1) piercing damage.'
+  - name: Claw
+    desc: '<i>Melee Weapon Attack:</i> +3 to hit, reach 5 ft., one target.<br><i>Hit:</i> 4 (1d6 + 1) piercing damage.'
+
+- source: CoS
+  name: Wereraven
+  icon: raven
+  size: Medium
+  type: humanoid
+  subtype: shapechanger
+  alignment: lawful good
+  armor_class: 12
+  hit_points: 31
+  hit_dice: 7d8
+  speed: 30 ft., fly 50 ft. (raven, hybird)
+  strength: 10
+  dexterity: 15
+  constitution: 11
+  intelligence: 13
+  wisdom: 15
+  charisma: 14
+  insight: 4
+  perception: 6
+  damage_immunities: bludgeoning, piercing and slashing from non-magical attacks not made with silvered weapons
+  condition_immunities: poisoned
+  senses: passive Perception 16
+  languages: Common (can't speak in raven form)
+  challenge_rating: 2
+  special_abilities:
+  - name: Shapechanger
+    desc: >-
+      <i>1 Action</i> Polymorph into a raven, human or hybrid. Statistics, except size, are the same in
+      each. Equipment it is wearing or carrying isn't transformed.
+      Reverts to human if it dies.
+  - name: Mimicry
+    desc: >-
+      It can mimic simple sounds it has heard. A creature can tell they are
+      imitations with a successful DC 10 Insight check.
+  actions:
+  - name: Multiattack (Human or Hybrid)
+    desc: The wereraven makes two weapon attacks, one of which can be with its hand crossbow.
+  - name: Beak (Raven or Hybrid)
+    desc: '<i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target. <i>Hit:</i> 1 piercing (raven),
+      or 4 (1d4 + 2) piercing (hybrid). Humanoids make a DC 10 CON
+      save vs wereraven lycanthropy.'
+  - name: Shortsword (Human or Hybrid)
+    desc: '<i>Melee Weapon Attack:</i> +4 to hit, reach 5 ft., one target. <i>Hit:</i> 5 (1d6 + 2) piercing damage.'
+  - name: Hand Crossbow (Human or Hybrid)
+    desc: '<i>Ranged Weapon Attack:</i> +4 to hit, range 30/120 ft., one target. <i>Hit:</i> 5 (1d6 + 2) piercing damage.'

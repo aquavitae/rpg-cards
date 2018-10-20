@@ -1,3 +1,180 @@
+- name: Animal Friendship
+  level: 1
+  school: { name: Enchantment }
+  casting_time: 1 action
+  range: 30 feet
+  components: [ V, S, M ]
+  material: a morsel of food
+  duration: 24 hours
+  ritual: false
+  classes:
+    - name: Bard
+    - name: Druid
+    - name: Ranger
+  desc:
+    This spell lets you convince a beast that you mean it no harm. Choose a
+    beast that you can see within range. It must see and hear you. If the beast's
+    Intelligence is 4 or higher, the spell fails. Otherwise, the beast must succeed
+    on a Wisdom saving throw or be charmed by you for the spell's duration.
+    If you or one of your companions harms the target, the spell ends.
+  higher_level:
+    When you cast this spell using a spell slot of 2nd level or higher,
+    you can affect one additional beast for each slot level above 1st.
+
+- name: Blade Ward
+  level: 0
+  school: { name: Abjuration }
+  casting_time: 1 action
+  range: Self
+  components: [ V, S ]
+  duration: 1 round
+  ritual: false
+  concentration: false
+  classes:
+    - name: Bard
+    - name: Sorcerer
+    - name: Warlock
+    - name: Wizard
+  desc:
+    You extend your hand and trace a sigil of warding in the
+    air. Until the end of your next turn, you have resistance
+    against bludgeoning, piercing, and slashing damage
+    dealt by weapon attacks.
+
+- name: Compulsion
+  level: 4
+  school: { name: Enchantment }
+  casting_time: 1 action
+  range: Self
+  components: [ V, S ]
+  duration: Up to one minute
+  ritual: false
+  concentration: true
+  classes:
+    - name: Bard
+  desc:
+    - Creatures of your choice that you can see within range
+      and that can hear you must make a Wisdom saving
+      throw. A target automatically succeeds on this saving
+      throw if it can't be charmed. On a failed save, a target
+      is affected by this spelI. Until the speIl ends, you can
+      use a bonus action on each of your turns to designate a
+      direction that is horizontal to YOU. Each affected target
+      must use as much of its movement as possible to move
+      in that direction on its next turno It can take its action
+      before it moves. After moving in this way, it can make
+      another Wisdom saving to try to end the effect.
+    - A target isn't compeIled to move into an obviously
+      deadly hazard, such as a fire or pit, but it will provoke
+      opportunity attacks to move in the designated direction.
+
+- name: Counterspell
+  level: 3
+  school: { name: Abjuration }
+  casting_time: 1 reaction, which you take when you see a creature within 60 feet of you casting a spell
+  range: 60 feet
+  components: [ S ]
+  duration: Instantaneous
+  ritual: false
+  concentration: false
+  classes:
+    - name: Warlock
+    - name: Wizard
+  desc:
+    You altempt to interrupt a creature in the process of
+    casting a spell. lf the creature is casting a spell of 3rd
+    level or lower, its spell fails and has no effect. lf it is
+    casting a spell of 4th level or higher, make an ability
+    check using your spellcasting ability. The DC equals 10 + the spell's level.
+    On a success, the creature's spell fails and has no effect.
+  higher_level:
+    When you cast this spell using a
+    spell slot of 4th level or higher, the interrupted spell has
+    no effect if its level is less than or equal to the level of the
+    spell slot you used.
+
+- name: Druidcraft
+  level: 0
+  school: { name: Transmutation }
+  casting_time: 1 action
+  range: 30 feet
+  components: [ V, S ]
+  duration: Instantaneous
+  ritual: false
+  concentration: false
+  classes:
+    - name: Druid
+  desc:
+    - "Whispering to the spirits of nature, you create one of the
+      following effects within range:"
+    - bullet | You create a tiny, harmless sensory effect that predicts
+      what the weather will be at your location for the next
+      24 hours. The effect might manifest as a golden orb
+      for clear skies, a cloud for rain, falling snowflakes for
+      snow, and so on. This effect persists for 1 round.
+    - bullet | You instantly make a flower blossom, a seed pod open,
+      or a leaf bud bloom.
+    - bullet | You create an instantaneous, harmless sensory effect,
+      such as falling leaves, a puff of wind, the sound of a
+      small animal, or the faint odor of skunk. The effect
+      must fit in a 5-foot cube.
+    - bullet | You instantly light or snuff out a candle, a torch, or a
+      small campfire.
+
+- name: Friends
+  level: 0
+  school: { name: Enchantment }
+  casting_time: 1 action
+  range: Self
+  components: [ S, M ]
+  material: a small amount of makeup applied to the face as this spell is cast
+  duration: Up to one minute
+  ritual: false
+  concentration: true
+  classes:
+    - name: Bard
+    - name: Sorcerer
+    - name: Warlock
+    - name: Wizard
+  desc:
+    For the duration, you have advantage on all Charisma
+    checks directed at one creature of your choice that isn't
+    hostile toward you. When the spell ends, the creature
+    realizes that you used magic to influence its mood
+    and becomes hostile toward you. A creature prone
+    to violence might attack you. Another creature might
+    seek retribution in other ways (at the DM's discretion),
+    depending on the nature of your interaction with it.
+
+- name: Hex
+  level: 1
+  school: { name: Enchantment }
+  casting_time: 1 bonus action
+  range: 90 feet
+  components: [ V, S, M ]
+  material: the petrified eye of a newt
+  duration: Up to 1 hour
+  ritual: false
+  concentration: true
+  classes:
+    - name: Warlock
+  desc:
+    - You place a curse on a creature that you can see within
+      range. Until the spell ends, you deal an extra 1d6
+      necrotic damage to the target whenever you hit it with
+      an attack. Also, choose one ability when you cast the
+      spell. The target has disadvantage on ability checks
+      made with the chosen ability.
+    - If the target drops to 0 hit points before this spell
+      ends. you can use a bonus action on a subsequent turn
+      of yours to curse a new creature.
+    - A <i>remove curse</i> cast on the target ends this spell early.
+  higher_level:
+    When you cast this spell using a spell slot of 3rd or 4th level, you can maintain your
+    concentration on the spell for up to 8 hours. When you
+    use a spell slot of 5th level or higher, you can maintain
+    your concentration on the spell for up to 24 hours.
+
 - name: Hunter's Mark
   level: 1
   school: { name: Divination }
@@ -22,6 +199,36 @@
     When cast at 3rd or 4th level, the duration increases to up to 8 hours.
     When cast at 5th level or higher, duration increases to up to 24 hours.
 
+- name: Crown of Madness
+  level: 2
+  school: { name: Enchantment }
+  classes:
+    - name: Bard
+    - name: Sorcerer
+    - name: Warlock
+    - name: Wizard
+  casting_time: 1 action
+  range: 120 feet
+  components: [ V, S ]
+  duration: up to 1 minute
+  concentration: true
+  desc:
+  - One humanoid of your choice that you can see within
+    range must succeed on a Wisdom saving throw or
+    become charmed by you for the duration. While
+    the target is charmed in this way, a twisted crown
+    of jagged iron appears on its head, and a madness
+    glows in its eyes.
+  - The charmed target must use its action before moving
+    on each of its turns to make a melee attack against a
+    creature other than itself that you mentally choose.
+    The target can act normally on its turn if you choose no
+    creature or if none are within its reach.
+  - On your subsequent turns, you must use your action to
+    maintain control over the target, or the spell ends. Also,
+    the target can make a Wisdom saving throw at the end
+    of each of its turns. On a success. the spell ends.
+
 - name: Hail of Thorns
   level: 1
   school: { name: Conjuration }
@@ -41,10 +248,39 @@
     5 feet of it must make a Dexterity saving throw. A
     creature takes 1d10 piercing damage on a failed save, or
     half as much damage on a successful one.
-  higher_levels:
+  higher_level:
     If you cast this spell using a spell
     slot of 2nd level or higher, the damage increases by 1d10
     for each slot level above 1st (to a maximum of 6d10).
+
+- name: Ensnaring Strike
+  level: 1
+  school: { name: Conjuration }
+  casting_time: 1 bonus action
+  range: Self
+  components: V
+  duration: Up to 1 minute
+  concentration: true
+  classes:
+    - Ranger
+  desc:
+    The next time you hit a creature with a weapon attack
+    before this spell ends, a writhing mass of thorny vines
+    appears at the point of impact, and the target must
+    succeed on a Strength saving throw or be restrained by
+    the magical vines until the spell ends. A Large ar larger
+    creature has advantage on this saving throw. If the
+    target succeeds on the save, the vines shrivel away.
+    While restrained by this spell, the target takes 1d6
+    piercing damage at the start of each of its turns. A creature
+    restrained by the vines or one that can touch the creature
+    can use its action to make a Strength check against your
+    spell save DC. On a success, the target is freed.
+
+  higher_levels:
+    If you cast this spell using a spell
+    slot of 2nd level or higher, the damage increases by 1d6
+    for each slot level above 1st.
 
 - name: Compelled Duel
   level: 1
@@ -66,6 +302,49 @@
     The spell ends if you attack any other creature, if a creature friendly to you damages the target or
     casts a harmful spell on it, or if you end your turn more
     than 30 feet away from the target.
+
+- name: Evard's Black Tentacles
+  level: 4
+  school: { name: Conjuration }
+  casting_time: 1 action
+  classes:
+    - name: Wizard
+  range: 90 feet
+  components: [ V, S, M]
+  material: a piece of tentacle from a giant octopus or a giant squid
+  duration: up to 1 minute
+  concentration: true
+  desc:
+  - Squirming, ebony tentacles fill a 20 ft square on
+    ground that you can see within range. For the duration,
+    these tentacles turn the ground in the area into
+    difficult terrain.
+  - When a creature enters the affected area for the first
+    time on a turn or starts its turn there, the creature
+    must succeed on a Dexterity saving throw or take 3d6
+    bludgeoning damage and be restrained by the tentacles
+    until the spell ends. A creature that starts its turn in the
+    area and is already restrained by the tentacles takes 3d6
+    bludgeoning damage.
+    A creature restrained by the tentacles can use its
+    action to make a Strength ar Dexterity check (its choice)
+    against your spell save DC. On a success, it frees itself.
+
+- name: Fire Bolt
+  level: 0
+  school: { name: Evocation }
+  classes:
+    - name: Sorcerer
+    - name: Wizard
+  casting_time: 1 action
+  range: 120 feet
+  components: VS
+  duration: Instantaneous
+  desc: >-
+    You hurl a mote of fire at a creature or object within range. Make a ranged spell attack against the
+    target. On a hit, the target takes 1d10 fire damage. A flammable object hit by this spell ignites if it isn't being worn or carried.
+  higher_level:
+    This spell's damage increases by 1d10 when you reach 5th level (2d10), 11th level (3d10), and 17th level (4d10).
 
 - name: Searing Smite
   level: 1
@@ -94,6 +373,27 @@
     spell slot of 2nd level or higher, the initial extra damage
     dealt by the attack increases by 1d6 for each slot
     level above 1st.
+
+- name: Thorn Whip
+  level: 0
+  school: { name: Transmutation }
+  classes:
+    - name: Druid
+  casting_time: 1 action
+  range: 30 feet
+  components: [ V, S, M ]
+  material: the stem of a plant with thorns
+  duration: Instantaneous
+  desc:
+    You create a long, vine-like whip covered in thorns that
+    lashes out at your command toward a creature in range.
+    Make a melee spell attack against the target. If the
+    attack hits, the creature takes 1d6 piercing damage, and
+    if the creature is Large or smaller, you pull the creature
+    up to 10 feet closer to you.
+  higher_level:
+    This spell's damage increases by 1d6 when you reach
+    5th level (2d6), 11th level (3d6), and 17th level (4d6).
 
 - name: Thunderous Smite
   level: 1
@@ -132,3 +432,32 @@
     frightened of you until the spell ends. As an action, the
     creature can make a Wisdom check against your spell
     save DC to steel its resolve and end this spell.
+
+- name: Witch Bolt
+  level: 1
+  school: { name: Evocation }
+  classes:
+    - name: Sorcerer
+    - name: Warlock
+    - name: Wizard
+  casting_time: 1 action
+  range: 30 feet
+  components: [V, S, M]
+  material: a twig from a tree that has been struck by lightning
+  duration: up to 1 minute
+  concentration: true
+  desc:
+  - A beam of crackling, blue energy lances out toward
+    a creature within range, forming a sustained arc of
+    lightning between you and the target. Make a ranged
+    spell attack against that creature. On a hit, the target
+    takes 1d12 lightning damage, and on each of your turns
+    for the duration, you can use your action to deal 1d12
+    lightning damage to the target automatically. The spell
+    ends if you use your action to do anything else. The spell
+    also ends if the target is ever outside the spell's range or
+    if it has total cover from you.
+  higher_level: >-
+    When you cast this spell using
+    a spell slot of 2nd level or higher, the initial damage
+    increases by 1d12 for each slot level above 1st.

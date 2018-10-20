@@ -7,6 +7,7 @@ import re
 import urllib.request
 import yaml
 
+from common import load_from_file, randomlist, write_json, tostring
 from collections import OrderedDict
 from pathlib import Path
 
@@ -21,44 +22,16 @@ def include(row):
     if name in printed:
         return False
     if name in (
-        'immovable rod',                # Um
-        'sending stones',               # Um
-        'slippers of spider climbing',  # UM
-        'adamantine breastplate',       # UM
-        'portable hole',                # Rm
-        'potion of healing',            # Cm
+        'flame tongue',
+        'bracers of defense',
+        'ring of spell storing',
+        'rod of the pact keeper',
+        'staff of withering',
+        'cloak of displacement',
+        'dagger of venom',
     ):
         return True
     return False
-
-
-def represent_ordereddict(dumper, data):
-    value = []
-    for item_key, item_value in data.items():
-        node_key = dumper.represent_data(item_key)
-        node_value = dumper.represent_data(item_value)
-        value.append((node_key, node_value))
-    return yaml.nodes.MappingNode(u'tag:yaml.org,2002:map', value)
-
-
-def str_presenter(dumper, data):
-  if len(data.splitlines()) > 1:  # check for multiline string
-    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
-  return dumper.represent_scalar('tag:yaml.org,2002:str', data)
-
-yaml.add_representer(OrderedDict, represent_ordereddict)
-yaml.add_representer(str, str_presenter)
-
-
-def tostring(x):
-    if isinstance(x, list):
-        return ''.join(x)
-    return x.replace('\n\n', '<br>')
-
-
-def load_from_file(filename):
-    with open(filename) as fh:
-        return yaml.load(fh)
 
 
 def get_icon_and_colour(row):
@@ -93,8 +66,21 @@ def get_caption(row):
     return caption
 
 
+def get_properties(row):
+    properties = []
+    for prop in row.get('properties', []):
+        for name, desc in prop:
+            name = name[0].upper() + name[1:]
+            properties.append('property | {} | {}'.format(name, desc))
+    return properties
+
+
 def get_contents(row):
+    properties = get_properties(row)
     contents = []
+    if properties:
+        contents = properties + ['rule']
+
     if row.get('description') or row.get('type'):
         line = 'text |'
         if row.get('type'):
@@ -128,41 +114,20 @@ def convert(row):
     }
     if row.get('title_size'):
         data['title_size'] = row['title_size']
-    if 'picture_ratio' in row:
-        data['picture_flex_ratio'] = row['picture_ratio']
+    if 'picture_flex_ratio' in row:
+        data['picture_flex_ratio'] = row['picture_flex_ratio']
     return data
 
 
-def write_json(data, outfile):
-    # data = sorted(data, key=lambda x: x['name'])
-    with open(outfile, 'w') as fh:
-        json.dump(data, fh, indent=2)
-
-
-def main(infile, outfile):
+def main(folder, outfile):
     data = []
-    for row in load_from_file(infile):
-        if include(row):
-            data.append(convert(row))
+    for infile in Path(folder).iterdir():
+        print(infile)
+        for row in load_from_file(infile):
+            if include(row):
+                data.append(convert(row))
 
     write_json(data, outfile)
-
-
-def randomlist(infile, number, **filters):
-    items = []
-    for row in load_from_file(infile):
-        for k, v in filters.items():
-            if row.get(k) != v:
-                break
-        else:
-            items.append(row)
-
-    for _ in range(number):
-        index = random.randint(0, len(items) - 1)
-        item = items[index]
-        del items[index]
-        print(item['name'])
-
 
 def fetch_all(infile, outfile):
     items = []
@@ -207,6 +172,6 @@ def fetch_all(infile, outfile):
 
 
 if __name__ == '__main__':
-    randomlist('sources/items/dmg-clean.yml', 6, level="minor", rarity='common')
-    # main('sources/items/dmg-clean.yml', 'items.json')
+    # randomlist('sources/items', 6, level="minor", rarity='common')
+    main('sources/items', 'items.json')
     # fetch_all('sources/items/dmg-complete.yml', 'sources/items/dmg-clean.yml')

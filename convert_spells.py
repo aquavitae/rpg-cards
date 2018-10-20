@@ -8,55 +8,77 @@ import yaml
 
 from pathlib import Path
 from collections import OrderedDict
+from common import load_from_path, randomlist, to_text_blocks
+from allspells import load_all_spells, long_spells
 
-printed = [
-]
+SOURCE = './sources/spells'
+level = 0
+
+spells_loaded = 0
 
 def include(row):
     """
     Use this function to filter the items processed.
     """
-    name = row['name'].lower()
-    if name in printed:
+    global spells_loaded
+    if row['name'] not in load_all_spells():
         return False
+    if row['name'] in (
+        "Counterspell",
+        "Blade Ward",
+        "Druidcraft",
+        "Poison Spray",  # Prepare this
+        "Spare the dying",
+        # "True Strike",
+        "Vicious Mockery",
 
-    # classes = [c['name'] for c in row['classes']]
-    if row['level'] <= 1 and 'Paladin' in row['classes']:
+        "Armor of Agathys",
+        "Banishing Smite",
+        "Branding Smite",
+        "Chain Lightning"
+        "Charm Monster",
+        "Commune with Nature",
+        "Compulsion",
+        "Contact Other Plane",
+        "Counterspell",
+        "Crown of Stars",
+        "Disguise Self",
+        "Dominate Monster",
+        "Earthbind",
+        "Ensnaring Strike",
+        "Ensnaring Strike",
+        "Etherealness",
+        "Find Steed",
+        "Glibness",
+        "Goodberry",
+        "Grasping Vine",
+        "Guardian of Nature",
+        "Gust",
+        "Harm",
+        "Magic Circle",
+        "Mental Prison",
+        "Move Earth",
+        "Phantasmal Force",
+        "Power Word Heal",
+        "Prismatic Wall",
+        "Pyrotechnics",
+        "Scrying",
+        "Shatter",
+        "Skill Empowerment",
+        "Temple of the Gods",
+        "Tidal Wave",
+        "Wall of Force",
+        "Water Breathing",
+    ):
+        spells_loaded += 1
         return True
-    if row['name'] in ["Hunter's Mark", 'Hail of Thorns', 'Ensnaring Strike']:
-        return True
-    if row['level'] == 0 :
-        return True
+    if row['name'] in long_spells():
+        return False
+    # if spells_loaded < 18:
+    #     spells_loaded += 1
+    #     return True
     return False
 
-
-def represent_ordereddict(dumper, data):
-    value = []
-    for item_key, item_value in data.items():
-        node_key = dumper.represent_data(item_key)
-        node_value = dumper.represent_data(item_value)
-        value.append((node_key, node_value))
-    return yaml.nodes.MappingNode(u'tag:yaml.org,2002:map', value)
-
-
-def str_presenter(dumper, data):
-  if len(data.splitlines()) > 1:  # check for multiline string
-    return dumper.represent_scalar('tag:yaml.org,2002:str', data, style='|')
-  return dumper.represent_scalar('tag:yaml.org,2002:str', data)
-
-yaml.add_representer(OrderedDict, represent_ordereddict)
-yaml.add_representer(str, str_presenter)
-
-
-def tostring(x):
-    if isinstance(x, list):
-        return '\n'.join(x)
-    return x
-
-
-def load_from_file(path):
-    with path.open(encoding='utf-8') as fh:
-        return yaml.load(fh)
 
 def get_icon_and_colour(row):
     # icon = {
@@ -71,16 +93,16 @@ def get_icon_and_colour(row):
     # }.get(row['school']['name'])
     icon = 'tied-scroll'
     colour = {
-        9: 'rebeccapurple', # '#670000',
-        8: 'steelblue', # '#811A1A',
-        7: 'teal', # '#9A3333',
-        6: 'darkgreen', # '#B33D3D',
-        5: 'olive', # '#CD6666',
-        4: 'darkgoldenrod', # '#E67F7F',
-        3: 'darkorange', # '#FF9999',
-        2: 'darkred', # '#FFB3B3',
-        1: 'saddlebrown', # '#FFCCCC',
-        0: 'slategray', # '#FFE5E5',
+        9: 'indigo',
+        8: 'mediumblue',
+        7: 'teal',
+        6: 'darkgreen',
+        5: 'olive',
+        4: 'darkgoldenrod',
+        3: 'darkorange',
+        2: 'orangered',
+        1: 'saddlebrown',
+        0: 'slategray',
     }[row['level']]
     return icon, colour
 
@@ -125,10 +147,11 @@ def clean(row):
 
 
 def convert(row):
+    print(row['name'])
     tags = ['spell', 'level_{}'.format(row['level'])]
     subtitle = get_subtitle(row)
     ritual = 'ritual' if row.get('ritual') else ''
-    concentration = 'concentration' if row['concentration'] else ''
+    concentration = 'concentration' if row.get('concentration') else ''
     contents = [
         'subtitle | {}'.format(subtitle),
         'rule',
@@ -137,15 +160,13 @@ def convert(row):
         'property | Range | {}'.format(row['range']),
         'property | Components | {}'.format(get_components(row)),
         'rule',
-        'text | {}'.format(tostring(row['desc']))
-    ]
+    ] + to_text_blocks(row['desc'])
 
     if row.get('higher_level'):
         contents += [
             'fill',
             'section | Higher levels',
-            'text | {}'.format(tostring(row['higher_level']))
-        ]
+        ] + to_text_blocks(row['higher_level'])
 
     classes = ', '.join(row['classes'])
     contents.append('text | <span class="right-footer">{}</span>'.format(classes))
@@ -172,14 +193,14 @@ def write_json(data, outfile):
 
 def main(folder, outfile):
     data = []
-    for infile in Path(folder).iterdir():
-        for row in load_from_file(infile):
-            row = clean(row)
-            if include(row):
-                data.append(convert(row))
+    for row in load_from_path(folder):
+        row = clean(row)
+        if include(row):
+            data.append(convert(row))
 
     write_json(data, outfile)
 
 
 if __name__ == '__main__':
+    # randomlist('./sources/spells', 6, level=0)
     main('./sources/spells', 'spells.json')

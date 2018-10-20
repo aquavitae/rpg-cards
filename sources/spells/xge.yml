@@ -1,0 +1,32 @@
+
+- name: Snare
+  level: 1
+  school: { name: Abjuraton }
+  casting_time: 1 minute
+  range: Touch
+  components: [ S, M ]
+  material: 25 feet of rope, which the spell consumes
+  duration: Up to 1 minute
+  concentration: true
+  classes:
+    - Druid
+    - Ranger
+    - Wizard
+  desc:
+    - As you cast this, you use the rope to create a circle
+      with a 5 ft radius on the ground. When
+      you finish casting, the rope disappears and the circle
+      becomes a magic trap.
+    - It is nearly invisible, requiring a successful
+      Investigation check against your spell save DC to be discerned.
+    - The trap triggers when a Small, Medium, or Large
+      creature moves onto the ground in the
+      spell's radius. That creature must succeed on a Dexterity saving throw or be magically hoisted into the air,
+      leaving it hanging upside down 3 feet above the ground. It is restrained there until the
+      spell ends.
+    - A restrained creature can make a DEX saving
+      throw at the end of its turns to try to end the effect. Alternatively,
+      the creature or anyone who can reach it can use an action to make an
+      Arcana check against your spell save DC to end the effect.
+      After it is triggered, the spell ends when no
+      creature is restrained by it.

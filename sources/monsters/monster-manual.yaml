@@ -1,0 +1,578 @@
+---
+- source: MM
+  name: Crawling Claw
+  picture: https://www.aidedd.org/dnd/images/crawlingClaw.jpg
+  picture_flex_ratio: [ 10, 11 ]
+  icon: evil-hand
+  size: Tiny
+  type: undead
+  alignment: neutral evil
+  armor_class: 12
+  hit_points: 2
+  hit_dice: 1d4
+  speed: 20 ft., climb 20 ft.
+  strength: 13
+  dexterity: 14
+  constitution: 11
+  intelligence: 5
+  wisdom: 10
+  charisma: 4
+  damage_immunities: 'poison'
+  condition_immunities: 'charmed, exhaustion, poisoned'
+  senses: blindsight 30ft. (blind beyond this radius), passive Perception 10
+  languages: understands Common but can't speak
+  challenge_rating: 0
+  special_abilities:
+  - desc: The claw is immune to effects that turn undead.
+    name: Turn Immunity
+  actions:
+  - desc: >-
+      Melee Weapon Attack: +3 to hit, reach 5 ft ., one target.
+      Hit: 3 (1d4 + 1) bludgeoning or slashing damage (claw's choice) .
+    name: Claw
+
+- source: MM
+  name: Grell
+  icon: brain-tentacle
+  size: Medium
+  type: aberration
+  subtype: ''
+  alignment: neutral evil
+  armor_class: 12
+  hit_points: 55
+  hit_dice: 10d8 + 10
+  speed: 10 ft., fly 30 ft. (hover)
+  strength: 15
+  dexterity: 14
+  constitution: 13
+  intelligence: 12
+  wisdom: 11
+  charisma: 9
+  intelligenct_save: 5
+  perception: 4
+  stealth: 6
+  damage_immunities: lightning
+  condition_immunities: blinded, prone
+  senses: blindsight 60 ft. (blind beyond this radius), passive Perception 14
+  languages: Grell
+  challenge_rating: 3
+  xp: 700
+  special_abilities:
+  - attack_bonus: 0
+    desc: 'The grell makes two attacks: one with its tentacles and one with its beak.'
+    name: Multiattack
+  actions:
+  - damage_bonus: 2
+    damage_dice: 1d10
+    attack_bonus: 4
+    desc: 'Melee Weapon Attack: +4 to hit, reach 10ft., one creature. Hit: 7 (1d10
+      + 2) piercing damage, and the target must succeed on a DC 11 Constitution saving
+      throw or be poisoned for 1 minute. The poisoned target is paralyzed, and it
+      can repeat the saving throw at the end of each of its turns, ending the effect
+      on a success.<br>The target is also grappled (escape DC 15). If the target is
+      Medium or smaller, it is also restrained until this grapple ends. While grappling
+      the target, the grell has advantage on attack rolls against it and can''t use
+      this attack against other targets. When the grell moves, any Medium or smaller
+      target it is grappling moves with it.'
+    name: Tentacles
+  - damage_bonus: 2
+    damage_dice: 2d4
+    attack_bonus: 7
+    desc: 'Melee Weapon Attack: +4 to hit, reach 5 ft., one creature. Hit: 7 (2d4
+      + 2) piercing damage.'
+    name: Beak
+- source: MM
+  name: Ogrillon (Half-Ogre)
+  icon: ogre
+  size: Large
+  type: giant
+  subtype: ''
+  alignment: any chaotic alignment
+  armor_class: 12
+  armor: hide armor
+  hit_points: 30
+  hit_dice: 4d10 + 8
+  speed: 40 ft.
+  strength: 17
+  dexterity: 10
+  constitution: 14
+  intelligence: 7
+  wisdom: 9
+  charisma: 10
+  senses: darkvision 60 ft., passive Perception 9
+  languages: Common, Giant
+  challenge_rating: 1
+  actions:
+  - damage_bonus: 3
+    damage_dice: 2d8
+    attack_bonus: 5
+    desc: 'Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 12 (2d8 +
+      3) slashing damage, or 14 (2d10 + 3) slashing damage if used with two hands.'
+    name: Battleaxe
+  - damage_bonus: 3
+    damage_dice: 2d6
+    attack_bonus: 5
+    desc: 'Melee or Ranged Weapon Attack: +5 to hit, reach 5 ft. or range 30/120 ft.,
+      one target. Hit: 10 (2d6 + 3) piercing damage.'
+    name: Javelin
+- source: MM
+  name: Pixie
+  icon: fairy
+  size: Tiny
+  type: fey
+  subtype: ''
+  alignment: neutral good
+  armor_class: 15
+  hit_points: 1
+  hit_dice: 1d4 - 1
+  speed: 10 ft., fly 30 ft.
+  strength: 2
+  dexterity: 20
+  constitution: 8
+  intelligence: 10
+  wisdom: 14
+  charisma: 15
+  perception: 4
+  stealth: 7
+  damage_vulnerabilities: ''
+  damage_resistances: ''
+  damage_immunities: ''
+  condition_immunities: ''
+  senses: passive Perception 14
+  languages: Sylvan
+  challenge_rating: 0.25
+  special_abilities:
+  - desc: The pixie has advantage on saving throws against spells and other magical
+      effects.
+    name: Magic Resistance
+  - desc:
+    - 'The pixie''s innate spellcasting ability is Charisma (spell save DC 12). It
+      can innately '
+    - "cast the following spells, requiring only its pixie dust as a component:\n\n"
+    - "• At will: <i>druidcraft</i>\n"
+    - "• 1/day each: <i>confusion, dancing lights, detect evil and good, detect thoughts,
+      dispel magic, entangle, fly, phantasmal force, polymorph, sleep</i>"
+    name: Innate Spellcasting
+  actions:
+  - desc: The pixie magically turns invisible until its concentration ends (as if
+      concentrating on a spell). Any equipment the pixie wears or carries is invisible
+      with it.
+    name: Superior Invisibility
+- source: MM
+  name: Faerie Dragon
+  icon: ''
+  size: Tiny
+  type: dragon
+  subtype: ''
+  alignment: chaotic good
+  armor_class: 15
+  hit_points: 14
+  hit_dice: 4d4 + 4
+  speed: 10 ft., fly 60 ft.
+  strength: 3
+  dexterity: 20
+  constitution: 13
+  intelligence: 14
+  wisdom: 12
+  charisma: 16
+  arcana: 4
+  perception: 3
+  stealth: 7
+  senses: darkvision 60 ft., passive Perception 13
+  languages: Draconic, Sylvan
+  challenge_rating: 1
+  special_abilities:
+  - desc: |-
+      The pixie's innate spellcasting ability is Charisma (spell save DC 12). It can innately cast the following spells, requiring only its pixie dust as a component:
+
+      •At will: druidcraft
+      •1/day each: confusion, dancing lights, detect evil and good, detect thoughts, dispel magic, entangle, fly, phantasmal force, polymorph, sleep
+    name: Innate Spellcasting
+  - name: Limited Telepathy
+    desc: Using telepathy, the dragon can magically communicate with any other faerie
+      dragon within 60 feet of it.
+  - name: Magic Resistance
+    desc: The dragon has advantage on saving throws against spells and other magical
+      effects.
+  - name: Innate Spellcasting
+    desc:
+    - 'The dragon''s innate spellcasting ability is Charisma (spell save DC 13). '
+    - 'It can innately cast a number of spells, requiring no material components. '
+    - "As the dragon ages and changes color, it gains additional spells as shown below.\n\n"
+    - "• Red, l/day each: dancing lights, mage hand, minor illusion\n"
+    - "• Orange, l/day: color spray\n"
+    - "• Yellow, l/day: mirror image\n"
+    - "• Green, l/day: suggestion\n"
+    - "• Blue, l/day: major image\n"
+    - "• Indigo, l/day: hallucinatory terrain\n"
+    - "• Violet, l/day: polymorph\n"
+  actions:
+  - name: Bite
+    desc: 'Melee Weapon Attack: +7 to hit, reach 5 ft., one creature. Hit: 1 piercing
+      damage.'
+  - name: Euphoria Breath (Recharge 5-6)
+    desc:
+    - The dragon exhales a puff of euphoria gas at one creature within 5 feet of it.
+      The target must
+    - succeed on a DC 11 Wisdom saving throw, or for 1 minute, the target can't take
+      reactions and must roll a d6 at the start of
+    - 'each of its turns to determine its behavior during the turn:
+
+'
+    - "<b>1-4.</b> The target takes no action or bonus action and uses all of its
+      movement to move in a random direction.\n"
+    - "<b>5-6.</b> The target doesn't move, and the only thing it can do on its turn
+      is make a DC 11 Wisdom saving throw, ending the effect on itself on a success."
+
+- source: MM
+  name: Gnoll Pack Lord
+  icon: fox-head
+  size: Medium
+  type: humanoid
+  subtype: gnoll
+  alignment: chaotic evil
+  armor_class: 15
+  armour: hide armor, shield
+  hit_points: 49
+  hit_dice: 9d8 + 9
+  speed: 30 ft.
+  strength: 16
+  dexterity: 14
+  constitution: 13
+  intelligence: 8
+  wisdom: 11
+  charisma: 9
+  senses: darkvision 60 ft., passive Perception 10
+  languages: Gnoll
+  challenge_rating: 2
+  special_abilities:
+  - attack_bonus: 0
+    desc: When the gnoll reduces a creature to 0 hit points with a melee attack on
+      its turn, the gnoll can take a bonus action to move up to half its speed and
+      make a bite attack.
+    name: Rampage
+  actions:
+  - name: Multiattack
+    desc: The gnoll makes two attacks, either with its glaive or its longbow, and
+      uses its Incite Rampage if it can.
+  - damage_bonus: 3
+    damage_dice: 1d4
+    attack_bonus: 5
+    desc: 'Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4
+      + 3) piercing damage.'
+    name: Bite
+  - damage_bonus: 3
+    damage_dice: 1d10
+    attack_bonus: 5
+    desc: 'Melee Weapon Attack: +5 to hit, reach 10 ft., one target. Hit: 8 (1d10
+      + 3) slashing damage.'
+    name: Glaive
+  - damage_bonus: 2
+    damage_dice: 1d8
+    attack_bonus: 4
+    desc: 'Ranged Weapon Attack: +4 to hit, range 150/600 ft., one target. Hit: 6
+      (1d8 + 2) piercing damage.'
+    name: Longbow
+  - name: Incite Rampage (Recharges 5-6)
+    desc: One creature the gnoll can see within 30 feet of it can use its reaction
+      to make a melee attack if it can hear the gnoll and has the Rampage trait.
+
+- source: MM
+  name: Scarecrow
+  icon: scarecrow
+  size: Medium
+  type: construct
+  alignment: chaotic evil
+  armor_class: 11
+  hit_points: 36
+  hit_dice: 8d8
+  speed: 30 ft.
+  strength: 11
+  dexterity: 13
+  constitution: 11
+  intelligence: 10
+  wisdom: 10
+  charisma: 13
+  damage_vulnerabilities: fire
+  damage_resistances: bludgeoning, piercing, and slashing from non-magical weapons
+  damage_immunities: poison
+  condition_immunities: charmed, exhaustion, frightened, paralyzed, poisoned, unconscious
+  senses: darkvision 60 ft., passive Perception 10
+  languages: understands the language of its creator but can't speak
+  challenge_rating: 1
+  special_abilities:
+    - attack_bonus: 0
+      desc: While the scarecrow remains motionless, it is indistinguishable from an
+        ordinary, inanimate scarecrow.
+      name: False Appearance
+  actions:
+    - name: Multiattack
+      desc: The scarecrow makes two claw attacks.
+    - damage_bonus: 1
+      damage_dice: 2d4
+      attack_bonus: 3
+      desc:
+      - 'Melee Weapon Attack: +3 to hit, reach 5 ft., one target. Hit: 6 (2d4 + 1) slashing
+        damage. '
+      - 'If the target is a creature, it must succeed on a DC 11 Wisdom saving throw
+        or be '
+      - frightened until the end of the scarecrow's next turn.
+      name: Claw
+    - desc:
+      - 'The scarecrow targets one creature it can '
+      - 'see within 30 feet of it. If the target can see the scarecrow, the '
+      - 'target must succeed on a DC 11 Wisdom saving throw or be '
+      - 'magically frightened until the end of the scarecrow''s next turn. '
+      - 'The frightened target is paralyzed. '
+      name: Terrifying Glare
+
+- source: MM
+  name: Displacer Beast
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/3/36/Monster_Manual_5e_-_Displacer_Beast_-_p81.jpg/revision/latest?cb=20141111125051
+  picture_flex_ratio: [ 2, 3 ]
+  icon: spiked-tentacle
+  size: Large
+  type: monstrosity
+  alignment: lawful evil
+  armor_class: 13
+  armor: natural armor
+  hit_points: 85
+  hit_dice: 10d10 + 30
+  speed: 40 ft.
+  strength: 18
+  dexterity: 15
+  constitution: 16
+  intelligence: 6
+  wisdom: 12
+  charisma: 8
+  senses: darkvision 60 ft., passive Perception 11
+  challenge_rating: 3
+  special_abilities:
+    - name: Avoidance
+      desc:
+        If the displacer beast is subjected to an effect that
+        allows it to make a saving throw to take only half damage, it
+        instead takes no damage if it succeeds on the saving throw,
+        and only half damage if it fails.
+    - name: Displacement
+      desc:
+        The displacer beast projects a magical illusion
+        that makes it appear to be standing near its actual location,
+        causing attack rolls against it to have disadvantage. If it is hit
+        by an attack, this trait is disrupted until the end of its next
+        turn. This trait is also disrupted while the displacer beast is
+        incapacitated or has a speed of 0.
+  actions:
+    - name: Multiattack
+      desc: The displacer beast makes two attacks.
+    - name: Tentacle
+      desc: 'Melee Weapon Attack: +6 to hit, reach 10ft., one target. Hit: 7 (ld6 + 4) bludgeoning damage +3 (1d6) piercing damage.'
+    - name: Bite
+      desc: 'Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 9 (1d10 + 4) piercing damage.'
+    - name: Claw
+      desc: 'Melee Weapon Attack: +6 to hit, reach 5 ft, one target. Hit: 8 (1d8 + 4) slashing damage.'
+
+- source: MM
+  name: Needle Blight
+  icon: root-tip
+  size: Medium
+  type: plant
+  alignment: neutral evil
+  armor_class: 12
+  armor: natural armor
+  hit_points: 11
+  hit_dice: 2d8 + 2
+  speed: 30 ft.
+  strength: 12
+  dexterity: 12
+  constitution: 13
+  intelligence: 4
+  wisdom: 8
+  charisma: 3
+  condition_immunities: blinded, deafened
+  senses: blindsight 60 ft. (blind beyond this), passive Perception 9
+  languages: understands Common but can't speak
+  challenge_rating: 0.25
+  actions:
+    - name: Claws
+      desc: 'Melee Weapon Attack: +3 to hit, reach 5 ft., one target.
+        Hit: 6 (2d4 + 1) piercing damage.'
+    - name: Needles
+      desc: 'Ranged Weapon Attack: +3 to hit, range 30/60 ft., one
+        target. Hit: 8 (2d6 + 1) piercing damage.'
+
+- source: MM
+  name: Twig Blight
+  icon: dead-wood
+  size: Small
+  type: plant
+  alignment: neutral evil
+  armor_class: 13
+  armor: natural armor
+  hit_points: 4
+  hit_dice: 1d6 + 1
+  speed: 20 ft.
+  strength: 6
+  dexterity: 13
+  constitution: 12
+  intelligence: 4
+  wisdom: 8
+  charisma: 3
+  stealth: 3
+  condition_immunities: blinded, deafened
+  damage_vulnerabilities: fire
+  senses: blindsight 60 ft. (blind beyond this), passive Perception 9
+  languages: understands Common but can't speak
+  challenge_rating: 0.125
+  special_abilities:
+    - name: False Appearance
+      desc: While the blight remains motionless, it is indistinguishable from a dead shrub.
+  actions:
+    - name: Claws
+      desc: 'Melee Weapon Attack: +3 to hit, reach 5 ft., one target.
+        Hit: 3 (1d4 + 1) piercing damage.'
+
+- source: MM
+  name: Vine Blight
+  icon: curling-vines
+  size: Medium
+  type: plant
+  alignment: neutral evil
+  armor_class: 12
+  armor: natural armor
+  hit_points: 26
+  hit_dice: 4d8 + 8
+  speed: 10 ft.
+  strength: 15
+  dexterity: 8
+  constitution: 14
+  intelligence: 5
+  wisdom: 10
+  charisma: 3
+  stealth: 1
+  condition_immunities: blinded, deafened
+  senses: blindsight 60 ft. (blind beyond this), passive Perception 10
+  languages: understands Common but can't speak
+  challenge_rating: 0.5
+  special_abilities:
+    - name: False Appearance
+      desc: While the blight remains motionless, it is indistinguishable from a tangle of vines.
+  actions:
+    - name: Constrict
+      desc: >
+        Melee Weapon Attack: +4 to hit, reach 10ft., one
+        target. Hit: 9 (2d6 + 2) bludgeoning damage, and a Large or
+        smaller target is grappled (escape DC 12) . Until this grapple
+        ends, the target is restrained, and the blight can't constrict
+        another target.
+    - name: Entangling Plants (Recharge 5-6)
+      desc: >
+        Grasping roots and vines sprout in a 15-foot radius centered on the blight, withering
+        away after 1 minute. For the duration, that area is difficult
+        terrain for non plant creatures. In addition, each creature
+        of the blight's choice in that area when the plants appear
+        must succeed on a DC 12 Strength saving throw or become
+        restrained. A creature can use its action to make a DC 12
+        Strength check, freeing itself or another entangled creature
+        within reach on a success.
+
+- source: MM
+  name: Beserker
+  icon: barbarian
+  size: Medium
+  type: humanoid
+  subtype: any race
+  alignment: any chaotic alignment
+  armor_class: 13
+  armour: hide armor
+  hit_points: 67
+  hit_dice: 9d8 + 27
+  speed: 30 ft.
+  strength: 16
+  dexterity: 12
+  constitution: 17
+  intelligence: 9
+  wisdom: 11
+  charisma: 9
+  senses: passive Perception 10
+  languages: any one language (usually Common)
+  challenge_rating: 2
+  special_abilities:
+  - name: Reckless
+    desc: At the start of its turn, the berserker can gain
+      advantage on all melee weapon attack rolls during that turn,
+      but attack rolls against it have advantage until the start of
+      its next turn.
+  actions:
+  - desc: 'Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 9 (1d12 + 3) slashing damage.'
+    name: Greataxe
+
+- source: MM
+  name: Revenant
+  icon: angry-eyes
+  size: Medium
+  type: undead
+  alignment: neutral
+  armor_class: 13
+  armor: leather armor
+  hit_points: 136
+  hit_dice: 16d8 + 64
+  speed: 30 ft.
+  strength: 18
+  dexterity: 14
+  constitution: 18
+  intelligence: 13
+  wisdom: 16
+  charisma: 18
+  strength_save: 7
+  constitution_save: 7
+  wisdom_save: 6
+  charisma_save: 7
+  damage_resistances: necrotic, psychic
+  damage_immunities: poison
+  condition_immunities: charmed, exhaustion, frightened, paralyzed, poisoned, stunned
+  senses: darkvision 60 ft., passive Perception 13
+  languages: the language it knew in life
+  challenge_rating: 5
+  special_abilities:
+    - name: Regeneration
+      desc: The revenant regains 10 hit points at the start
+        of its turn. If the revenant takes fire or radiant damage, this
+        trait doesn't function at the start of the revenant's next turn.
+        The revenant's body is destroyed only if it starts its turn with
+        0 hit points and doesn't regenerate.
+    - name: Rejuvenation
+      desc: When the revenant's body is destroyed, its soul
+        lingers. After 24 hours, the soul inhabits and animates another
+        corpse on the same plane of existence and regains all its hit
+        points. While the soul is bodiless, a wish spell can be used to
+        force the soul to go to the afterlife and not return.
+    - name: Turn Immunity
+      desc: The revenant is immune to effects that turn undead.
+    - name: Vengeful Tracker
+      desc: The revenant knows the distance to and
+        direction of any creature against which it seeks revenge, even
+        if the creature and the revenant are on different planes of
+        existence. If the creature being tracked by the revenant dies,
+        the revenant knows.
+  actions:
+    - name: Multiattack
+      desc: The revenant makes two fist attacks.
+    - name: Fist
+      desc: 'Melee Weapon Attack: +7 to hit, reach 5 ft., one target. Hit: 11 (2d6 + 4) bludgeoning damage.
+        If the target is a creature
+        against which the revenant has sworn vengeance, the target
+        takes an extra 14 (4d6) bludgeoning damage. Instead ofdealing
+        damage, the revenant can grapple the target (escape DC 14)
+        provided the target is Large or smaller.'
+    - name: Vengeful Glare
+      desc: The revenant targets one creature it can see
+        within 30 feet of it and against which it has sworn vengeance.
+        The target must make a DC 15 Wisdom saving throw. On a
+        failure, the target is paralyzed until the revenant deals damage
+        to it, or until the end of the revenant's next turn. When the
+        paralysis ends, the target is frightened of the revenant for 1
+        minute. The frightened target can repeat the saving throw at
+        the end of each of its turns, with disadvantage if it can see
+        the revenant, ending the frightened condition on itself on
+        a success.

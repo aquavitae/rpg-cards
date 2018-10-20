@@ -2,7 +2,7 @@
     color: white;
     padding-left: 2mm;
     padding-right: 2mm;
-    margin-bottom: 2mm;
+    margin-bottom: 1mm;
 }
 
 .subtitle-right {
@@ -22,7 +22,7 @@
 
 .card-content-container.picture-container {
     padding: 0.2mm;
-    margin-bottom: 2mm;
+    margin-bottom: 1mm;
 }
 
 .card-size-25x35 {

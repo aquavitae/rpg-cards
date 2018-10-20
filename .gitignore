@@ -3,3 +3,6 @@
 /generator/js/*.d.ts
 /temp
 /temp.zip
+/items.json
+/monsters.json
+/spells.json

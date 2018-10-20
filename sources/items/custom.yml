@@ -1,0 +1,152 @@
+- name: Wolfbite
+  tags:
+  - bow
+  category: Weapon
+  icon: high-shot
+  # picture: http://images6.fanpop.com/image/photos/32100000/katealphwolfs-tattoo-alpha-and-omega-32195010-412-504.jpg
+  rarity: rare
+  level: major
+  attunement: true
+  description: This fine willow longbow has an obsidian stone set just above the grip,
+    carved with the face of a wolf. It contains the spirit of a lawful good astral wolf.
+  usage: |
+    You gain a +1 bonus to attack and damage rolls made with this weapon. While attuned to it, you gain advantage on
+    social interactions with wolves and can speak with wolves.
+
+    <b>Wolfshot:</b> <i>(Once per short rest)</i> When an arrow is fired a command may be given to release
+    a spectral wolf along with the arrow. This attack is always made with advantage. On a hit the wolf bites
+    the target dealing an additional 2d6 + 3 piercing damage and the target must make a DC 13 STR save or be knocked prone.
+    The wolf disappears as soon as the attack finishes.
+
+    <b>Assume Spirit:</b> <i>(Once per day)</i> A willing creature may use an action to touch the stone symbol
+    and accept the spirit of the wolf, polymorphing into a Dire Wolf. The effect ends after 1 hour. A single attempt
+    may be made to end this early by making a DC 13 Animal Handling check.
+    While this is in effect, Wolfshot cannot be used.
+
+- name: Smoke Bomb
+  picture: ../sources/images/smoke2.png
+  picture_ratio: [8, 10]
+  category: Wondrous Item
+  rarity: uncommon
+  level: minor
+  description: >-
+    This clay ball is about the size of a clenched fist with no apparent openings of joints.
+  usage: >-
+    When an action is used to shatter the smoke bomb, it fills a sphere with a 10 foot radius with a thick cloud of black smoke,
+    heavily obscuring the area. The smoke spreads around corners, and lasts for 1 minute or until a gust of wind of moderate or greater
+    speed (at least 10 miles per hour) disperses it.
+
+- name: Sunsword
+  rarity: rare
+  category: Weapon
+  level: major
+  attunement: true
+  description: >-
+    This item appears to be a longsword hilt. While grasping the hilt, you
+    can use a bonus action to cause a blade of pure radiance to spring into
+    existence, or make the blade disappear.
+
+  usage: >-
+    You gain a +1 bonus to attack and damage rolls made with this weapon,
+    which deals radiant damage instead of slashing damage. When you hit an
+    undead with it, that target takes an extra 1d8 radiant damage.
+
+    The sword's luminous blade emits bright sunlight in a 15-foot radius and
+    dim light for an additional 15 feet. While the
+    blade persists, you can use an action to expand or reduce its radius of
+    bright and dim light by 5 feet each, to a maximum of 30 feet each or a
+    minimum of 10 feet each.
+  limits: longsword
+
+- name: Moonblade (awakened)
+  rarity: rare
+  category: Weapon
+  level: major
+  attunement: true
+  description: >-
+    This item appears to be a longsword hilt. While grasping the hilt, you
+    can use a bonus action to cause a blade of pure radiance to spring into
+    existence, or make the blade disappear.
+
+  usage: >-
+    You gain a +1 bonus to attack and damage rolls made with this weapon,
+    which deals radiant damage instead of slashing damage. When you hit an
+    shapeshifter with it, that target takes an extra 1d8 radiant damage.
+
+    The sword's luminous blade emits bright moonlight in a 15-foot radius and
+    dim light for an additional 15 feet. While the
+    blade persists, you can use an action to expand or reduce its radius of
+    bright and dim light by 5 feet each, to a maximum of 30 feet each or a
+    minimum of 10 feet each.
+
+    <b>Blades' Fervour:</b> Once per day, for 1 minute, someone wielding both
+    weapons can attune his mind to the minds in both swords, pushing himself
+    beyond his normal limits as he allows the swords to take over. While under
+    this effect he can make two strikes, one with each weapon, when making an
+    opportunity attack, and opportunity attacks may be made using a reaction
+    against anyone within melee range. However, when the effect ends, he takes 1 point of exhaustion.
+
+    <b>Blade's Aversion:</b> Any attacks with either blade against someone wielding the other are
+    at disadvantage and on a hit, both characters must make a DC 18 Strength save or be knocked prone.
+
+  limits: longsword
+
+- name: Moonblade
+  icon: shining-sword
+  category: Weapon
+  rarity: rare
+  level: major
+  attunement: true
+  description: >-
+    This longsword has a long, narrow, double-edged blade, with very faint silver runes down it's length that are barely visible,
+    but show clearly in bright moonlight.
+  usage: >-
+    In darkness, the unsheathed blade of this sword sheds moonlight, creating bright light in a 15-foot radius and
+    dim light for an additional 15 feet.
+
+    On a hit, this sword does an additional 1d4 radiant damage, and attacks with it are considered magical.
+  notes: >-
+    Once awakened, this becomes a +2 longsword, dealing an additional 1d8 radiant damage. The blade itself becomes pure moonlight,
+    and can be slid into or out of the hilt using a bonus action. It is the companion of the Sunblade, and when used together,
+    the wielder gains an extra attack with one of the blades when both weapons are are used in an attack.
+
+    It is awakened by using it to slay a powerful werewolf.
+
+- name: Symbol of the Lost God
+  icon: emerald-necklace
+  category: Wondrous Item
+  rarity: rare
+  level: major
+  attunement: true
+  description: >-
+    This ebony pendant is carved in the shape of a book with a flaming sword on the cover.
+  usage: >-
+    The symbol has 10 charges, regaining ld6 + 4 charges daily at dawn.<br>
+
+    <b>Hold Vampires.</b> <i>(1 charge)</i> As an action, present the symbol to make it ﬂare with
+    holy power. Vampires and vampire spawn within 30 ft must succeed a DC 15 wisdom
+    save or be paralyzed for 1 minute. Each target can repeat the saving throw at the
+    end of each of its turns.<br>
+
+    <b>Turn Undead.</b> <i>(3 charges)</i> If you present the holy symbol while using
+    Turn Undead or Turn the Unholy, undead have disadvantage on
+    their saving throws against the eﬀect.<br>
+
+    <b>Sunlight.</b> <i>(5 charges)</i> As an action, you can
+    present the symbol to make it shed bright
+    light in a 30-foot radius and dim light for an additional
+    30 feet. The light is sunlight and lasts for 10 minutes or
+    until you end the effect (no action required)
+
+- name: Charm of Heroism
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/b/bc/Moonstone.jpg/revision/latest/scale-to-width-down/185?cb=20110825203209
+  source: dmg 188
+  rarity: uncommon
+  category: Wondrous Item
+  level: minor
+  attunement: false
+  usage: >-
+    For 1 hour after using it, you gain 10 temporary hit points that
+    last for 1 hour. For the same duration, whenever you make an attack roll or a saving throw,
+    you can roll a d4 and add the number rolled to the attack roll or saving throw.
+    Once used, the charm is destroyed.

@@ -1,0 +1,19 @@
+- name: Mother's Milk
+  tags:
+  - poison
+  category: Potion
+  icon: poison-bottle
+  picture: ../sources/images/items/mother's milk.jpg
+  picture_flex_ratio: [3, 2]
+  rarity: uncommon
+  level: minor
+  attunement: false
+  usage: |
+    A creature who ingests this poison must succeed on a DC 16 Constitution saving
+    throw or take 3 (1d6) poison damage and become
+    poisoned. The poisoned creature must repeat the saving
+    throw every 24 hours, taking 3 (1d6) poison damage
+    on a failed save. Until this poison ends, the damage
+    the poison deals can't be healed by any means. After
+    seven successful saving throws, the effect ends and the
+    creature can heal normally.

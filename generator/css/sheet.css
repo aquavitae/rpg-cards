@@ -1,0 +1,160 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.page {
+  width: 21cm;
+  min-height: 29.7cm;
+  padding: 1cm;
+  margin: 1cm auto;
+  border: 1px #D3D3D3 solid;
+  background: #f1e9e2;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  /*   font-family: 'Cinzel', serif; */
+  font-family: 'Merienda', cursive;
+  font-size: 10pt;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  .page {
+    margin: 0;
+    border: initial;
+    border-radius: initial;
+    width: initial;
+    min-height: initial;
+    box-shadow: initial;
+    background: initial;
+    page-break-after: always;
+  }
+}
+
+.icon {
+  display: inline-block;
+  filter: invert(100%);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+}
+
+.header .sub-label {
+  margin-left: 3mm;
+}
+
+.sub-label:after {
+  content: attr(label);
+  position: relative;
+  display: block;
+  border-top: 0.4mm solid black;
+}
+
+
+.character-name {
+  /* width: 7cm; */
+  border-bottom: 0.5mm black solid;
+  /* padding: 3mm; */
+  font-family: 'Merienda', cursive;
+  font-size: 24px;
+  flex: 1;
+}
+
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  margin-right: 5mm;
+}
+
+/** Abilities **/
+
+.abilities {
+  /* width: 70mm; */
+}
+
+.ability {
+  border-bottom: 2px solid black;
+  display: flex;
+  flex-direction: row;
+  padding: 2mm;
+}
+
+.ability .title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 23mm;
+}
+
+.ability .value {
+  display: flex;
+  flex-direction: column;
+  padding-left:  3mm;
+}
+
+.ability .icon {
+  width: 1.4cm;
+  height: 1.4cm;
+  margin:  0;
+}
+
+.ability .score:before {
+  content: "Score: ";
+  color: #555555;
+  display: inline-block;
+  width: 2cm;
+}
+
+.ability .modifier:before {
+  content: "Modifier: ";
+  font-size: small;
+  color: #555555;
+  vertical-align:  middle;
+  display: inline-block;
+  width: 2cm;
+}
+
+.ability .save:before {
+  content: "Save: ";
+  color: #555555;
+  display: inline-block;
+  width: 2cm;
+}
+
+.ability .modifier {
+  font-size: 24px;
+}
+
+/** Saves and Skills **/
+
+.skill {
+  display: flex;
+  margin-bottom: 2mm;
+}
+
+.skill .icon {
+  width: 5mm;
+  height: 5mm;
+}
+
+.skill .score {
+  width: 8mm;
+  text-align:  center;
+}
+
+.skill.proficient {
+  font-weight: bold;
+}
+
+.skill name {
+
+}
