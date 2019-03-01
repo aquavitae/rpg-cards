@@ -511,22 +511,22 @@
   attunement: false
   description: |-
     This small black sphere measures 3/4 of an inch in diameter and weighs
-    an ounce. Typically, 1d4 + 4 *beads of force* are found together.
+    an ounce.
 
-    You can use an action to throw the bead up to 60 feet. The bead explodes
-    on impact and is destroyed. Each creature within a 10-foot radius of
-    where the bead landed must succeed on a DC 15 Dexterity saving throw or
-    take 5d4 force damage. A sphere of transparent force then encloses the
-    area for 1 minute. Any creature that failed the save and is completely
-    within the area is trapped inside this sphere. Creatures that succeeded
-    on the save, or are partially within the area, are pushed away from the
-    center of the sphere until they are no longer inside it. Only breathable
-    air can pass through the sphere's wall. No attack or other effect can.
-
-    An enclosed creature can use its action to push against the sphere's
-    wall, moving the sphere up to half the creature's walking speed. The
-    sphere can be picked up, and its magic causes it to weigh only 1 pound,
-    regardless of the weight of creatures inside.
+  usage:
+    - You can use an action to throw the bead up to 60 feet. The bead explodes
+      on impact and is destroyed. Each creature within a 10-foot radius of
+      where the bead landed must succeed on a DC 15 Dexterity saving throw or
+      take 5d4 force damage. A sphere of transparent force then encloses the
+      area for 1 minute. Any creature that failed the save and is completely
+      within the area is trapped inside this sphere. Creatures that succeeded
+      on the save, or are partially within the area, are pushed away from the
+      center of the sphere until they are no longer inside it. Only breathable
+      air can pass through the sphere's wall. No attack or other effect can.
+    - An enclosed creature can use its action to push against the sphere's
+      wall, moving the sphere up to half the creature's walking speed. The
+      sphere can be picked up, and its magic causes it to weigh only 1 pound,
+      regardless of the weight of creatures inside.
 
 - name: Belt of Cloud Giant Strength
   source: dmg 155
@@ -837,7 +837,7 @@
 - name: Bracers of Defense
   source: dmg 156
   picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/b/b2/Bracers_of_defense-5e.jpg/revision/latest?cb=20171025141604
-  picture_ratio: [ 1, 1 ]
+  picture_ratio: [ 5, 1 ]
   rarity: rare
   category: Wondrous Item
   level: major
@@ -1054,15 +1054,15 @@
 - name: Cloak of Displacement
   source: dmg 158
   picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/164/1000/1000/636284722823230171.jpeg
-  picture_ratio: [ 1, 1 ]
+  picture_ratio: [ 2, 1 ]
   rarity: rare
   category: Wondrous Item
   level: major
   attunement: true
   usage: |-
     While you wear this cloak, it projects an illusion that makes you
-    appear to be standing in a place near your actual location, causing any
-    creature to have disadvantage on attack rolls against you. If you take
+    appear to be standing in a place near your actual location, giving any
+    creature disadvantage on attack rolls against you. If you take
     damage, the property ceases to function until the start of your next
     turn. This property is suppressed while you are incapacitated,
     restrained, or otherwise unable to move.
@@ -1115,12 +1115,14 @@
     way again until the next dawn.
 
 - name: Cloak of the Manta Ray
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/170/1000/1000/636284723816150463.jpeg
+  picture_ratio: [5, 1]
   source: dmg 159
   rarity: uncommon
   category: Wondrous Item
   level: minor
   attunement: false
-  description: |-
+  usage: |-
     While wearing this cloak with its hood up, you can breathe underwater,
     and you have a swimming speed of 60 feet. Pulling the hood up or down
     requires an action.
@@ -1308,11 +1310,12 @@
 - name: Dagger of Venom
   source: dmg 161
   picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/6/6a/Dagger_of_venom-5e.jpg/revision/latest?cb=20180221141237
-  picture_ratio: [1, 1]
+  picture_ratio: [ 10, 9 ]
   rarity: rare
   category: Weapon
   level: major
   attunement: false
+  type: Dagger +1
   usage: |-
     You gain a +1 bonus to attack and damage rolls made with this magic
     weapon.
@@ -2321,8 +2324,8 @@
 - name: Flame Tongue
   source: dmg 170
   rarity: rare
-  picture: ../sources/images/items/flame tongue.png.jpg
-  picture_ratio: [ 1, 1 ]
+  picture: ../sources/images/items/flame tongue.png
+  picture_ratio: [ 4, 3 ]
   category: Weapon
   level: major
   attunement: true
@@ -2500,12 +2503,17 @@
     to climb or swim.
 
 - name: Gloves of Thievery
+  picture: ../sources/images/items/gloves of thievery.png
+  picture_ratio: [5, 1]
   source: dmg 172
   rarity: uncommon
   category: Wondrous Item
   level: major
   attunement: false
-  description: ''
+  usage:
+    These gloves are invisible while worn. While wearing
+    them, you gain a +5 bonus to Dexterity (Sleight of Hand)
+    checks and Dexterity checks made to pick locks.
 
 - name: Goggles of Night
   source: dmg 172
@@ -3791,6 +3799,7 @@
   category: Weapon
   level: major
   attunement: true
+  type: Rapier
   description: |-
     You gain a +2 bonus to attack and damage rolls made with this magic
     weapon.
@@ -4975,7 +4984,7 @@
 - name: Ring of Spell Storing
   source: dmg 192
   picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/a/a3/Ring_of_spell_storing_5e.png/revision/latest?cb=20171010201732
-  picture_ratio: [ 1, 1 ]
+  picture_ratio: [ 10, 17 ]
   rarity: rare
   category: Ring
   level: major
@@ -5453,13 +5462,20 @@
     an unoccupied space nearest that location. The rod can't be used again
     until ten days have passed.
 
-- name: Rod of the Pact Keeper, +1
+- name: Rod of the Pact Keeper
+  picture: https://i.pinimg.com/564x/6a/7e/4e/6a7e4eaf2f866a2a94793a0b84003ef0.jpg
+  picture_ratio: [ 3, 1 ]
   source: dmg 197
   rarity: uncommon
   category: Rod
   level: major
   attunement: true
-  description: ''
+  usage:
+    While holding this rod, you gain a +1 bonus to spell attack
+    rolls and to the saving throw DCs of your warlock spells.
+    In addition, you can regain one warlock spell slot
+    as an action while holding the rod. You can't use this
+    property again until you finish a long rest'
   limits: warlock
 
 - name: Rod of the Pact Keeper, +2
@@ -6379,7 +6395,7 @@
 - name: Staff of Withering
   source: dmg 205
   picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/2/2a/Staff_of_withering-5e.jpg/revision/latest?cb=20171010203152
-  picture_ratio: [ 1, 1 ]
+  picture_ratio: [ 3, 2 ]
   rarity: rare
   category: Staff
   level: major
@@ -6598,11 +6614,12 @@
   description: ''
   limits: longsword, by alignment
 
-- name: Sword of Life Stealing
+- name: Rapier of Life Stealing
   source: dmg 206
   rarity: rare
   category: Weapon
   level: major
+  type: Rapier
   attunement: true
   description: |-
     When you attack a creature with this magic weapon and roll a 20 on the
@@ -6642,13 +6659,16 @@
   description: ''
   limits: any sword
 
-- name: Sword of Wounding
+- name: Rapier of Wounding
   source: dmg 207
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/7/460/1000/1000/636284780329420913.jpeg
+  picture_ratio: [ 5, 9 ]
   rarity: rare
   category: Weapon
   level: major
   attunement: true
-  description: |-
+  type: Rapier
+  usage: |-
     Hit points lost to this weapon's damage can be regained only through a
     short or long rest, rather than by regeneration, magic, or any other
     means.
@@ -7264,10 +7284,20 @@
   rarity: common
   level: minor
 
-- name: cloak of many fashions
+- name: Cloak of Many Fashions
+  picture: ../sources/images/items/cloak.jpg
+  picture_ratio: [5, 2]
   source: xge
   rarity: common
   level: minor
+  category: Wondrous Item
+  usage:
+    While wearing this cloak, you can use a bonus action to
+    change the style, color, and apparent quality of the
+    garment. The cloak's weight doesn't change. Regardless of
+    its appearance, the cloak can't be anything but a cloak.
+    Although it can duplicate the appearance of other magic
+    cloaks, it doesn't gain their magical properties.
 
 - name: clockwork amulet
   source: xge

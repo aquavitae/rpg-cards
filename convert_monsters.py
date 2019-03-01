@@ -7,7 +7,7 @@ import urllib.request
 
 from pathlib import Path
 
-from common import load_from_file, highlight_dice
+from common import load_from_file, tostring
 
 SKILLS = [
     ('Acrobatics', 'acrobatics'),
@@ -65,8 +65,10 @@ printed = [
 ]
 
 TO_PRINT = [
-    'displacer beast',
-    'flesh golem',
+    'magician',
+    'bat',
+    'redcap',
+    'ogre zombie',
 ]
 
 def include(row):
@@ -133,7 +135,7 @@ def stats(row):
     stat_style = 'style="color:{};font-size:180%"'.format(colour)
     template = '<div {div_style}><b>{title}<br><span {stat_style}>{value}</span></b><br>{description}</div>'
 
-    armour = row.get('armor', '')
+    armour = row.get('armor', '') or row.get('armour')
     hit_dice = row['hit_dice']
     speeds = [re.sub(r'\s*ft\.?', '', x).strip() for x in row['speed'].split(',')]
     speed = 'NA'
@@ -238,10 +240,7 @@ def abilities(row):
             if title:
                 lines.append('section | ' + title)
             for x in row[key]:
-                desc = x['desc'] if isinstance(x['desc'], str) else ''.join(x['desc'])
-                desc = re.sub('(<br>|\n)+', '<br>', desc)
-                desc = highlight_dice(desc)
-                lines.append('property | {} | {}'.format(x['name'], desc))
+                lines.append('property | {} | {}'.format(x['name'], tostring(x['desc'])))
 
     return lines
 
@@ -310,7 +309,7 @@ def convert(row):
         'title': title,
         'icon': icon,
         'picture': row.get('picture', ''),
-        'picture_flex_ratio': row.get('picture_flex_ratio'),
+        'picture_flex_ratio': row.get('picture_flex_ratio') or row.get('picture_ratio'),
         'caption': caption,
         'contents': contents,
         'tags': tags,

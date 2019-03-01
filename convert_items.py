@@ -11,24 +11,15 @@ from common import load_from_file, randomlist, write_json, tostring
 from collections import OrderedDict
 from pathlib import Path
 
-printed = [
-]
-
 def include(row):
     """
     Use this function to filter the items processed.
     """
     name = row['name'].lower()
-    if name in printed:
-        return False
     if name in (
-        'flame tongue',
-        'bracers of defense',
-        'ring of spell storing',
-        'rod of the pact keeper',
-        'staff of withering',
-        'cloak of displacement',
-        'dagger of venom',
+        'rapier of wounding',
+        'cloak of the manta ray',
+        'bead of force',
     ):
         return True
     return False
@@ -60,7 +51,7 @@ def get_icon_and_colour(row):
 
 
 def get_caption(row):
-    caption = '{} ({})'.format(row['category'], row['rarity'])
+    caption = '{} ({} {})'.format(row['category'], row['level'], row['rarity'])
     if row.get('attunement'):
         caption += '<span class="subtitle-right">Attunement</span>'
     return caption
@@ -116,6 +107,9 @@ def convert(row):
         data['title_size'] = row['title_size']
     if 'picture_flex_ratio' in row:
         data['picture_flex_ratio'] = row['picture_flex_ratio']
+    elif 'picture_ratio' in row:
+        data['picture_flex_ratio'] = row['picture_ratio']
+
     return data
 
 
@@ -172,6 +166,6 @@ def fetch_all(infile, outfile):
 
 
 if __name__ == '__main__':
-    # randomlist('sources/items', 6, level="minor", rarity='common')
+    # randomlist('sources/items', 6, level="minor", rarity='rare')
     main('sources/items', 'items.json')
     # fetch_all('sources/items/dmg-complete.yml', 'sources/items/dmg-clean.yml')

@@ -1,0 +1,133 @@
+- source: "~"
+  name: Magician
+  icon: candle-skull
+  picture: https://qph.fs.quoracdn.net/main-qimg-2f364653f3b5b62f0cd4694ff9fe8ae8.webp
+  picture_flex_ratio: [ 18, 25 ]
+  size: Medium
+  type: humanoid
+  subtype: any race
+  alignment: any alignment
+  armor_class: 12
+  armor: 15 with mage armor
+  hit_points: 22
+  hit_dice: 5d8
+  speed: 30 ft.
+  strength: 9
+  dexterity: 14
+  constitution: 11
+  intelligence: 16
+  wisdom: 12
+  charisma: 11
+  intelligence_save: 5
+  wisdom_save: 3
+  arcana: 5
+  history: 5
+  senses: passive Perception 11
+  languages: any three languages
+  challenge_rating: 3
+  special_abilities:
+    - name: Spellcasting
+      desc:
+        - "5th-level spellcaster, Intelligence (save DC 13, +5 to hit)."
+        - "Cantrips (at will): <i>fire bolt, light, prestidigitation, toll the dead</i>"
+        - "1st level (4 slots): <i>detect magic, mage armor, magic missile, shield</i>"
+        - "2nd level (3 slots): <i>misty step, ray of enfeeblement</i>"
+        - "3rd level (2 slots): <i>animate dead, counterspell</i>"
+  actions:
+    - name: Dagger
+      desc: 'Melee or Ranged Weapon Attack: +4 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 4 (1d4 + 2) piercing damage.'
+
+- source: "~"
+  name: Pain Master
+  icon: slavery-whip
+  # picture: https://paizo.com/image/content/PathfinderTales/PZO8500-Salim.jpg
+  # picture_flex_ratio: [ 14, 25 ]
+  size: Medium
+  type: humanoid
+  subtype: any race
+  alignment: any alignment
+  armor_class: 15
+  armor: studded leather
+  hit_points: 80
+  hit_dice: 10d7 + 30
+  speed: 30 ft.
+  strength: 10
+  dexterity: 16
+  constitution: 17
+  intelligence: 16
+  wisdom: 12
+  charisma: 16
+  constitution_save: 6
+  wisdom_save: 4
+  charisma_save: 6
+  deception: 6
+  insight: 4
+  intimidation: 9
+  religion: 6
+  senses: passive Perception 11
+  languages: any two languages
+  challenge_rating: 5
+  special_abilities:
+    - name: Spellcasting
+      desc:
+        - "7th-level spellcaster, Intelligence (save DC 14, +6 to hit)."
+        - "Cantrips (at will): <i>message, minor illusion, shocking grasp</i>"
+        - "1st level (4 slots): <i>ray of sickness, Tasha's hideous laughter, unseen servant</i>"
+        - "2nd level (3 slots): <i>blur, detect thoughts, mind spike</i>"
+        - "3rd level (3 slots): <i>fear, lightning bolt, vampiric touch</i>"
+        - "4rd level (1 slots): <i>phantasmal killer, polymorph</i>"
+  actions:
+    - name: Multiattack
+      desc: The pain master makes two melee attacks.
+    - name: Dagger
+      desc: 'Melee or Ranged Weapon Attack: +6 to hit, reach 5 ft. or range 20/60 ft., one target. Hit: 5 (1d4 + 3) piercing damage.'
+    - name: Whip
+      desc: 'Melee Weapon Attack: +6 to hit, reach 10 ft., one target. Hit: 7 (1d6 + 3) slashing damage.'
+
+- source: "~"
+  name: Blackguard
+  icon: barbute
+  # picture: https://paizo.com/image/content/PathfinderTales/PZO8500-Salim.jpg
+  # picture_flex_ratio: [ 14, 25 ]
+  size: Medium
+  type: humanoid
+  subtype: any race
+  alignment: any non-good alignment
+  armor_class: 18
+  armor: plate
+  hit_points: 153
+  hit_dice: 18d8 + 72
+  speed: 30 ft.
+  strength: 18
+  dexterity: 11
+  constitution: 18
+  intelligence: 11
+  wisdom: 14
+  charisma: 15
+  wisdom_save: 5
+  charisma_save: 5
+  athletics: 7
+  deception: 5
+  intimidation: 5
+  senses: passive Perception 12
+  languages: any one languages (usually Common)
+  challenge_rating: 8
+  special_abilities:
+    - name: Spellcasting
+      desc:
+        - "10th-level spellcaster, Charisma (save DC 13, +5 to hit)."
+        - "1st level (4 slots): <i>command, protection from evil and good</i>"
+        - "2nd level (3 slots): <i>branding smite, find steed</i>"
+        - "3rd level (2 slots): <i>blinding smite, dispel magic</i>"
+  actions:
+    - name: Multiattack
+      desc: The pain master makes three attacks with its glaive or its shortbow.
+    - name: Glaive
+      desc: 'Melee Weapon Attack: +7 to hit, reach 10 ft., one target. Hit: 9 (1d10 + 2) slashing damage.'
+    - name: Shortbow
+      desc: 'Ranged Weapon Attack: +3 to hit, range 80/320 ft., one target. Hit: 5 (1d6 + 2) piercing damage.'
+    - name: Dreadful Aspect (Recharges after a Short of Long Rest)
+      desc: The blackguard exudes magical menacae. Each enemy with 30 ft. of the blackguard
+        must succeed on a DC 13 Wisdom saving throw or be frightened for 1 min. If a frightened
+        target ends its turn more than 30 ft away from the blackguard, the target can repeat
+        the saving throw.

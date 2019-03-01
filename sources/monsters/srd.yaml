@@ -2948,6 +2948,8 @@
   source: SRD
   name: Bat
   icon: bat
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/9/9f/Bat_-_Anne_Stokes.jpg/revision/latest/scale-to-width-down/350?cb=20090505051119
+  picture_ratio: [ 14, 10 ]
   size: Tiny
   type: beast
   subtype: ''
@@ -5644,37 +5646,43 @@
   special_abilities:
   - attack_bonus: 0
     desc:
-      The dryad's innate spellcasting ability is Charisma (spell save DC 14). The dryad can innately cast the following spells, requiring no material components:
-
-      At will: druidcraft
-      3/day each: entangle, goodberry
-      1/day each: barkskin, pass without trace, shillelagh
+      - "The dryad's innate spellcasting ability is Charisma (spell save DC 14).
+        She can innately cast the following spells, without material components:"
+      - "\u2022 At will: <i>druidcraft</i>"
+      - "\u2022 3/day each: <i>entangle, goodberry</i>"
+      - "\u2022 1/day each: <i>barkskin, pass without trace, shillelagh</i>"
     name: Innate Spellcasting
   - attack_bonus: 0
-    desc: The dryad has advantage on saving throws against spells and other magical
-      effects.
+    desc: Advantage on saves against spells and magical effects.
     name: Magic Resistance
   - attack_bonus: 0
     desc: The dryad can communicate with beasts and plants as if they shared a language.
     name: Speak with Beasts and Plants
   - attack_bonus: 0
-    desc: Once on her turn, the dryad can use 10 ft. of her movement to step magically
-      into one living tree within her reach and emerge from a second living tree within
-      60 ft. of the first tree, appearing in an unoccupied space within 5 ft. of the
-      second tree. Both trees must be large or bigger.
+    desc:
+      Once on her turn, the dryad can use 10 ft. of movement to step magically
+      into a tree within reach and emerge from a second within 60 ft. of the first,
+      appearing in an unoccupied space 5 ft. from the second. Both trees must be living and Large or bigger.
     name: Tree Stride
   actions:
   - damage_dice: 1d4
     attack_bonus: 2
     desc: 'Melee Weapon Attack: +2 to hit (+6 to hit with shillelagh), reach 5 ft.,
-      one target. Hit: 2 (1 d4) bludgeoning damage, or 8 (1d8 + 4) bludgeoning damage
-      with shillelagh.'
+      one target. Hit: 2 (1d4) bludgeoning, or 8 (1d8 + 4) bludgeoning with shillelagh.'
     name: Club
   - attack_bonus: 0
-    desc: >-
-      The dryad targets one humanoid or beast that she can see within 30 feet of her. If the target can see the dryad, it must succeed on a DC 14 Wisdom saving throw or be magically charmed. The charmed creature regards the dryad as a trusted friend to be heeded and protected. Although the target isn't under the dryad's control, it takes the dryad's requests or actions in the most favorable way it can.
-      Each time the dryad or its allies do anything harmful to the target, it can repeat the saving throw, ending the effect on itself on a success. Otherwise, the effect lasts 24 hours or until the dryad dies, is on a different plane of existence from the target, or ends the effect as a bonus action. If a target's saving throw is successful, the target is immune to the dryad's Fey Charm for the next 24 hours.
-      The dryad can have no more than one humanoid and up to three beasts charmed at a time.
+    desc:
+      - The dryad targets one humanoid or beast that she can see within 30 feet of her. If the
+        target can see the dryad, it must succeed on a DC 14 WIS save or be magically
+        charmed, regarding the dryad as a trusted friend to be heeded and
+        protected. Although the target isn't under the dryad's control, it takes her
+        requests or actions in the most favorable way it can.
+      - Each time the dryad or its allies do anything harmful to the target, it can repeat the
+        save, ending the effect on a success. Otherwise, the effect lasts 24
+        hours or until the dryad dies, is on a different plane of existence from the target, or
+        ends the effect as a bonus action. If a target's save is successful, the
+        target is immune to this for the next 24 hours.
+      - The dryad can have no more than one humanoid and up to three beasts charmed at a time.
     name: Fey Charm
   url: http://www.dnd5eapi.co/api/monsters/93
 - _id: 592f6c32c9e7ce9f72158029
@@ -12074,6 +12082,8 @@
   source: SRD
   name: Ogre
   icon: ogre
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/3/36/Monster_Manual_5e_-_Ogre_-_p237.jpg/revision/latest/scale-to-width-down/1000?cb=20141113155213
+  picture_ratio: [6, 5]
   size: Large
   type: giant
   subtype: ''
@@ -12115,6 +12125,8 @@
   index: 214
   source: SRD
   name: Ogre Zombie
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/287/1000/1000/636252770700032248.jpeg
+  picture_ratio: [ 8, 10 ]
   size: Large
   type: undead
   subtype: ''
@@ -12228,6 +12240,8 @@
   source: SRD
   name: Orc
   icon: orc-head
+  picture: https://www.aidedd.org/dnd/images/orc.jpg
+  picture_ratio: [9, 10]
   size: Medium
   type: humanoid
   subtype: orc
@@ -12305,7 +12319,7 @@
     name: Limited Telepathy
   actions:
   - attack_bonus: 0
-    desc: 'The otyugh makes three attacks: one with its bite and two with its tentacles.'
+    desc: 'The otyugh makes three attacks: one bite and two tentacles.'
     name: Multiattack
   - damage_bonus: 3
     damage_dice: 2d8
@@ -14872,6 +14886,9 @@
   index: 267
   source: SRD
   name: Stirge
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/0/111/1000/1000/636252745395103202.jpeg
+  picture_ratio: [ 9, 10 ]
+  icon: evil-bat
   size: Tiny
   type: beast
   subtype: ''
@@ -14898,7 +14915,7 @@
     damage_dice: 1d4
     attack_bonus: 5
     desc: >-
-      Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
+      Melee Weapon Attack: +5 to hit, reach 5 ft., one creature. <br>Hit: 5 (1d4 + 3) piercing damage, and the stirge attaches to the target. While attached, the stirge doesn't attack. Instead, at the start of each of the stirge's turns, the target loses 5 (1d4 + 3) hit points due to blood loss.
       The stirge can detach itself by spending 5 feet of its movement. It does so after it drains 10 hit points of blood from the target or the target dies. A creature, including the target, can use its action to detach the stirge.
     name: Blood Drain
   url: http://www.dnd5eapi.co/api/monsters/267
@@ -15432,6 +15449,8 @@
   index: 278
   source: SRD
   name: Swarm of Rats
+  picture: https://vignette.wikia.nocookie.net/descent2e/images/b/b9/RatSwarm.png/revision/latest?cb=20150428130849
+  picture_ratio: [ 10, 14 ]
   icon: seated-mouse
   size: Medium
   type: swarm of Tiny beasts

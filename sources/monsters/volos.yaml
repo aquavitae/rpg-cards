@@ -1,5 +1,177 @@
 ---
 - source: VGM
+  name: Gazer
+  picture: ../sources/images/monsters/gazer.jpg
+  picture_flex_ratio: [ 2, 3 ]
+  icon: behold
+  size: Tiny
+  type: aberration
+  alignment: neutral evil
+  armor_class: 13
+  armor: natural armor
+  hit_points: 13
+  hit_dice: 3d4 + 6
+  speed: 0 ft., fly 30 ft. (hover)
+  strength: 3
+  dexterity: 17
+  constitution: 14
+  intelligence: 3
+  wisdom: 10
+  charisma: 7
+  wisdom_save: 2
+  perception: 4
+  stealth: 5
+  condition_immunities: prone
+  senses: darkvision 60 ft., passive Perception 14
+  languages: Deep Speech, Undercommon, telepathy 120 ft.
+  challenge_rating: 0.5
+  special_abilities:
+    - name: Aggressive
+      desc:
+        As a bonus action, the gazer can move up to its
+        speed toward a hostile creature that it can see.
+    - name: Mimicry
+      desc: The gazer can mimic simple sounds of speech it has
+        heard, in any language. A creature that hears the sounds can
+        tell they are imitations with a successful DC 10 Wisdom (Insight) check.
+  actions:
+    - name: Bite
+      desc: 'Melee Weapon Attack: +1 to hit, reach 5 ft., one target. Hit: 1 piercing damage'
+    - name: Eye Rays
+      desc:
+        - The gazer shoots two of the following magical eye rays at random (reroll duplicates),
+          choosing one or two targets it can see within 60 feet of it.
+        - property | 1. Dazing Ray | The targeted creature must succeed on a DC
+          12 Wisdom saving throw or be charmed until the start of the
+          gazer's next turn. While the target is charmed in this way, its
+          speed is halved, and it has disadvantage on attack rolls.
+        - property | 2. Fear Ray | The targeted creature must succeed on a DC 12
+          Wisdom saving throw or be frightened until the start of the
+          gazer's next turn.
+        - property | 3. Frost Ray | The targeted creature must succeed on a DC 12
+          Dexterity saving throw or take 10 (3d6) cold damage.
+        - property | 4. Telekinetic Ray | If the target is a creature that is Medium or
+          smaller, it must succeed on a DC 12 Strength saving throw or
+          be moved up to 30 feet directly away from the gazer.
+        - If the target is an object weighing 10 pounds or less that
+          isn't being worn or carried, the gazer moves it up to 30 feet in
+          any direction. The gazer can also exert fine control on objects
+          with this ray, such as manipulating a simple tool or opening a
+          container.
+
+- source: VGM
+  name: Bheur Hag
+  icon: witch-face
+  size: Medium
+  type: fey
+  alignment: chaotic evil
+  armor_class: 17
+  armor: natural armor
+  hit_points: 91
+  hit_dice: 14d8 + 28
+  speed: 30 ft.
+  strength: 13
+  dexterity: 16
+  constitution: 14
+  intelligence: 12
+  wisdom: 13
+  charisma: 16
+  wisdom_save: 4
+  nature: 4
+  perception: 4
+  stealth: 6
+  survival: 4
+  damage_immunities: cold
+  senses: darkvision 60 ft., passive Perception 14
+  languages: Auran, Common, Giant
+  challenge_rating: 7
+  special_abilities:
+    - name: Graystaff Magic
+      desc:
+        The hag carries a <i>graystaff</i>, a length of gray
+        wood that is a focus for her inner power. She can ride the staff
+        as if it were a <i>broom of flying</i>. While holding the staff, she can
+        cast additional spells with her Innate Spellcasting trait (these
+        spells are marked with an asterisk). If the staff is lost or destroyed, the hag must craft another, which takes a year and a
+        day. Only a bheur hag can use a <i>graystaff</i>.
+    - name: Ice Walk
+      desc:
+        The hag can move across and climb icy surfaces without needing
+        to make an ability check. Additionally, difficult terrain
+        composed of ice or snow doesn't cost her extra moment.
+    - name: Innate Spellcasting
+      desc:
+      - "The hag's innate spellcasting ability is
+        Charisma (spell save DC 14, +6 to hit with spell attacks). She
+        can innately cast the following spells, requiring no material
+        components:"
+      - 'bullet | At will: <i>hold person*, ray of frost</i>'
+      - 'bullet | 3/day each: <i>cone of cold*, ice store*, wall of ice*</i>'
+      - 'bullet | 1/day each: <i>control weather</i>'
+  actions:
+    - name: Slam
+    - desc:
+        'Melee Weapon Attack: +4 to hit, reach 5 ft., one target.
+        Hit: 10 (2d8 + 1) bludgeoning damage plus 3 (1d6) cold damage.'
+    - name: Maddening Feast
+      desc:
+        The hag feasts on the corpse of one enemy
+        within 5 feet of her that died within the past minute. Each creature of
+        the hag's choice that is within 60 feet of her and able
+        to see her must succeed on a DC 15 Wisdom saving throw or
+        be frightened of her for 1 minute. While frightened in this way,
+        a creature is incapacitated, can't understand what others say,
+        can't read, and speaks only in gibberish; the DM controls the
+        creature's movement, which is erratic. A creature can repeat
+        the saving throw at the end of each of its turns, ending the
+        effect on itself on a success. If a creature's saving throw is
+        successful or the effect ends for it, the creature is immune to the
+        hag's Maddening Feast for the next 24 hours.
+
+- source: VGM
+  name: Redcap
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/f/fe/Redcap-5e.jpg/revision/latest?cb=20171011012556
+  picture_ratio: [ 10, 14 ]
+  icon: sickle
+  size: Small
+  type: fey
+  alignment: chaotic evil
+  armor_class: 13
+  armor: natural armor
+  hit_points: 45
+  hit_dice: 6d6 + 24
+  speed: 25 ft.
+  strength: 18
+  dexterity: 13
+  constitution: 18
+  intelligence: 10
+  wisdom: 12
+  charisma: 9
+  athletics: 6
+  perception: 3
+  senses: darkvision 60 ft., passive Perception 13
+  languages: Common, Sylvan
+  challenge_rating: 3
+  special_abilities:
+    - name: Iron Boots
+      desc: While moving, the redcap has disadvantage on Dexterity (Stealth) checks.
+    - name: Outsize Strength
+      desc:
+        While grappling, the redcap is considered
+        to be Medium. Also, wielding a heavy weapon doesn't impose
+        disadvantage on its attack rolls.
+  actions:
+    - name: Multiattack
+      desc: The redcap makes three attacks with its wicked sickle.
+    - name: Wicked Sickle
+      desc: 'Melee Weapon Attack: +6 to hit, reach 5 ft., one
+        target. Hit: 9 (2d4 + 4) slashing damage.'
+    - name: lronbound Pursuit
+      desc:
+        The redcap moves up to its speed to a creature it can see and kicks with its iron boots. The target must
+        succeed on a DC 14 Dexterity saving throw or take 20&nbsp;(3d10&nbsp;+&nbsp;4) bludgeoning damage and be knocked prone.
+
+- source: VGM
   name: Warlock of the Fiend
   size: Medium
   type: humanoid
@@ -62,7 +234,7 @@
   type: undead
   alignment: chaotic evil
   armor_class: 12
-  armour: natural armor
+  armor: natural armor
   hit_points: 11
   hit_dice: 2d8 + 2
   speed: 30 ft.
@@ -106,14 +278,14 @@
     - 30 feet of the witherling, the witherling makes a melee attack.
 - source: VGM
   name: Gnoll Hunter
-  ".picture": https://vignette.wikia.nocookie.net/forgottenrealms/images/1/17/Gnoll-5e.png/revision/latest?cb=20171011030355
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/1/17/Gnoll-5e.png/revision/latest?cb=20171011030355
   icon: fox-head
   size: Medium
   type: humanoid
   subtype: gnoll
   alignment: chaotic evil
   armor_class: 13
-  armour: leather armor
+  armor: leather armor
   hit_points: 22
   hit_dice: 4d8 + 4
   speed: 30 ft.
@@ -161,7 +333,7 @@
 - source: VGM
   name: Gnoll Flesh Gnawer
   icon: fox-head
-  ".picture": https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/677/1000/1000/636330370101337992.jpeg
+  picture: https://media-waterdeep.cursecdn.com/avatars/thumbnails/9/677/1000/1000/636330370101337992.jpeg
   picture_flex_ratio:
   - 4
   - 5
@@ -170,7 +342,7 @@
   subtype: gnoll
   alignment: chaotic evil
   armor_class: 14
-  armour: studded leather
+  armor: studded leather
   hit_points: 22
   hit_dice: 4d8 + 4
   speed: 30 ft.
@@ -308,3 +480,52 @@
   reactions:
     - name: Uncanny Dodge
       desc: The thief halves the damage that it takes from an attack that hits it. The thief must be able to see the attacker.
+
+- source: VGM
+  name: Necromancer
+  icon: candle-skull
+  picture: https://vignette.wikia.nocookie.net/forgottenrealms/images/e/ec/Grave_Circumstances.jpg/revision/latest?cb=20100120203243
+  picture_flex_ratio: [ 10, 25 ]
+  size: Medium
+  type: humanoid
+  subtype: any race
+  alignment: any alignment
+  armor_class: 12
+  armor: 15 with mage armor
+  hit_points: 66
+  hit_dice: 12d8 + 12
+  speed: 30 ft.
+  strength: 9
+  dexterity: 14
+  constitution: 12
+  intelligence: 17
+  wisdom: 12
+  charisma: 11
+  intelligence_save: 7
+  wisdom_save: 5
+  arcana: 7
+  history: 7
+  damage_resistances: necrotic
+  senses: passive Perception 11
+  languages: any four languages
+  challenge_rating: 9
+  special_abilities:
+    - name: Spellcasting
+      desc:
+        - "12th-level spellcaster, Intelligence (save DC 15, +7 to hit).<br>"
+        - "Cantrips (at will): <i>chill touch, dancing lights, mage hand, mending</i><br>"
+        - "1st level (4 slots): <i>false life*, mage armor, ray of sickness*</i><br>"
+        - "2nd level (3 slots): <i>blindness/deafness*, ray of enfeeblement*, web</i><br>"
+        - "3rd level (3 slots): <i>animate dead*, bestow curse*, vampiric touch*</i><br>"
+        - "4th level (3 slots): <i>blight*, dimension door, stoneskin</i><br>"
+        - "5th level (2 slots): <i>Bigby's hand, cloudkill</i><br>"
+        - "6th level (1 slots): <i>circle of death*</i>"
+    - name: Grim Harvest (1/Turn)
+      desc:
+        When necromancer kills a creature that
+        is neither a construct nor undead with a spell of 1st level or
+        higher, the necromancer regains hit points equal to twice the
+        spell's level, or three times if it is a necromancy spell (starred above).
+  actions:
+    - name: Withering Touch
+      desc: 'Melee Spell Attack: +7 to hit, reach 5 ft., one creature. Hit: 5 (2d4) necrotic.'

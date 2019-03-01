@@ -2,6 +2,7 @@
 
 import csv
 import json
+import random
 import re
 import urllib.request
 import yaml
@@ -9,74 +10,42 @@ import yaml
 from pathlib import Path
 from collections import OrderedDict
 from common import load_from_path, randomlist, to_text_blocks
-from allspells import load_all_spells, long_spells
+from allspells import load_all_spells
 
 SOURCE = './sources/spells'
 level = 0
-
-spells_loaded = 0
 
 def include(row):
     """
     Use this function to filter the items processed.
     """
-    global spells_loaded
-    if row['name'] not in load_all_spells():
-        return False
     if row['name'] in (
-        "Counterspell",
-        "Blade Ward",
-        "Druidcraft",
-        "Poison Spray",  # Prepare this
-        "Spare the dying",
-        # "True Strike",
-        "Vicious Mockery",
-
-        "Armor of Agathys",
-        "Banishing Smite",
-        "Branding Smite",
-        "Chain Lightning"
+        "Absorb Elements",
+        "Aganazzar's Scorcher",
+        "Beast Bond",
+        "Catapult",
+        "Catnap",
+        "Cause Fear",
         "Charm Monster",
-        "Commune with Nature",
-        "Compulsion",
-        "Contact Other Plane",
-        "Counterspell",
-        "Crown of Stars",
-        "Disguise Self",
-        "Dominate Monster",
-        "Earthbind",
-        "Ensnaring Strike",
-        "Ensnaring Strike",
-        "Etherealness",
-        "Find Steed",
-        "Glibness",
-        "Goodberry",
-        "Grasping Vine",
-        "Guardian of Nature",
+        "Control Flames",
+        "Dragon's Breath",
+
+        "Enervation",
+        "Far Step",
+        "Fireball",
         "Gust",
-        "Harm",
-        "Magic Circle",
-        "Mental Prison",
-        "Move Earth",
-        "Phantasmal Force",
-        "Power Word Heal",
-        "Prismatic Wall",
-        "Pyrotechnics",
-        "Scrying",
-        "Shatter",
-        "Skill Empowerment",
-        "Temple of the Gods",
-        "Tidal Wave",
-        "Wall of Force",
-        "Water Breathing",
+        "Healing Spirit",
+        "Mold Earth",
+        "Negative Energy Flood",
+        "Synaptic Static",
+        "Toll the Dead",
     ):
-        spells_loaded += 1
         return True
-    if row['name'] in long_spells():
-        return False
-    # if spells_loaded < 18:
-    #     spells_loaded += 1
-    #     return True
+    return False
+    if row['name'] in load_all_spells():
+        return True
+    # if row['source'] != 'ph':
+    #     return False
     return False
 
 
@@ -196,7 +165,12 @@ def main(folder, outfile):
     for row in load_from_path(folder):
         row = clean(row)
         if include(row):
-            data.append(convert(row))
+            try:
+                converted = convert(row)
+            except:
+                print(f'Error converting {row["name"]}')
+                raise
+            data.append(converted)
 
     write_json(data, outfile)
 

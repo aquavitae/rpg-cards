@@ -26,7 +26,14 @@ yaml.add_representer(str, str_presenter)
 
 
 def highlight_dice(x):
-    return re.sub(r'(\d+d\d+( ?[+-] ?\d+)?)', r'<b>\1</b>', x)
+    def repl(m):
+        if len(m.groupdict()) == 3:
+            fmt = '<b>{die}&nbsp;{sign}&nbsp;{add}</b>'
+        else:
+            fmt = '<b>{die}</b>'
+        return fmt.format(**m.groupdict())
+
+    return re.sub(r'(?P<die>\d+d\d+)( ?(?P<sign>[+-]) ?(?P<add>\d+)?)', repl, x)
 
 
 def tostring(x):

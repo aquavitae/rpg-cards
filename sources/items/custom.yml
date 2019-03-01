@@ -150,3 +150,14 @@
     last for 1 hour. For the same duration, whenever you make an attack roll or a saving throw,
     you can roll a d4 and add the number rolled to the attack roll or saving throw.
     Once used, the charm is destroyed.
+
+- name: Wand of Magic Detection
+  source: dmg 211
+  rarity: uncommon
+  category: Wand
+  level: minor
+  attunement: false
+  description: |-
+    This wand has 3 charges. While holding it, you can expend 1 charge as
+    an action to cast the *danse macabre* spell from it at 5th level. The wand regains
+    1d3 expended charges daily at dawn.
